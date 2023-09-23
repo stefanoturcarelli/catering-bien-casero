@@ -1,0 +1,12 @@
+body #page-container .et_pb_section .et_pb_button_1, body #page-container .et_pb_section .et_pb_button_0, body #page-container .et_pb_section .et_pb_button_2 {
+    color: #ffffff!important;
+    border-width: 0px!important;
+    border-color: rgba(0,0,0,0);
+    border-radius: 100px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 500!important;
+    text-transform: uppercase!important;
+    background-color: #8f0310;
+}

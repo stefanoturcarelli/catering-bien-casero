@@ -1,1 +1,117 @@
+@charset "utf-8";
+
+/* ------------------------------ BASIC RESET ------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+/* -------------------------------- GLOBAL -------------------------------- */
+
+:root {
+    --app-text-color: #fff;
+    --app-button-background-color: #8f0310;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.button {
+    text-decoration: none;
+    color: var(--app-text-color);
+    display: inline-block;
+    background-color: var(--app-button-background-color);
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-color: rgba(0,0,0,0);
+    border-width: 0px;
+    letter-spacing: 2px;
+}
+
+li {
+    list-style: none;
+}
+
+.container-flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------------------- HEADER -------------------------------- */
+
+header {
+    background-color: var(--app-button-background-color);
+    padding: 20px 0px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    color: var(--app-text-color);
+}
+
+h1 {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-grow: 1;
+}
+
+nav {
+    flex-grow: 3;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+    color: var(--app-text-color);
+}
+
+/* --------------------------------- MAIN --------------------------------- */
+
+/* -------------------------------- FOOTER -------------------------------- */
+
+/* --------------------------------- MEDIA --------------------------------- */
+
+/* @media screen and (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+    .container {
+        padding: 0px 10px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 5px 0px;
+    }
+    .container-flexbox {
+        flex-direction: column;
+    }
+    .container-flexbox > * {
+        margin: 10px 0px;
+    }
+} */
+
 
