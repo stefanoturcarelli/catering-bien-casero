@@ -20,7 +20,7 @@ We would like to acknowledge the following individuals for their contributions a
 
 ## Contact Information 📧
 
-If you have any questions or would like to get in touch with us, please feel free to send an email to: [cateringbiencasero@sgtr.dev](mailto:cateringbiencasero@sgtr.dev) 📩
+If you have any questions or would like to get in touch with us, please feel free to send an email to: [catering-bien-casero@sgtr.dev](mailto:catering-bien-casero@sgtr.dev) 📩
 
 ## Project Goals 🎯
 
