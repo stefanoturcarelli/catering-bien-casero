@@ -149,12 +149,23 @@ html {
 }
 
 .container {
-  max-width: var(--max-container-width, 1200px);
-  /* width: min(100% - 30px, 1080px); */
+  width: min(100% - 30px, 1080px);
   margin-inline: auto;
   padding-top: var(--container-padding, 20px);
   padding-bottom: var(--container-padding, 20px);
   box-sizing: border-box;
+}
+
+@media (min-width: 1080px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    width: 1400px;
+  }
 }
 
 p {
@@ -200,13 +211,6 @@ body {
 }
 
 /* --------------------------------- MEDIA --------------------------------- */
-
-/* @media (min-width: 768px) {
-  .container {
-    --max-container-width: 1400px;
-    --container-padding: 30px;
-  }
-} */
 
 /* ------------------------------------------------------------------------ */
 /*                                HEADER                                    */
