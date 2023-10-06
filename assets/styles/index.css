@@ -201,12 +201,12 @@ body {
 
 /* --------------------------------- MEDIA --------------------------------- */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container {
     --max-container-width: 1400px;
     --container-padding: 30px;
   }
-}
+} */
 
 /* ------------------------------------------------------------------------ */
 /*                                HEADER                                    */
@@ -419,7 +419,6 @@ section {
   color: var(--red-600);
   transition: all 0.3s ease-in-out;
 }
-
 
 .card-1 {
   background: url(../img/avocado-bacon.jpg) no-repeat center center/cover;
