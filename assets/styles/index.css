@@ -1,117 +1,372 @@
 @charset "utf-8";
 
-/* ------------------------------ BASIC RESET ------------------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    border-style: none;
-    box-sizing: border-box;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+
+.code-text {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 .container {
-    width: min(100% - 30px, 1080px);
-    margin-inline: auto;
+  max-width: var(--max-container-width, 1200px);
+  /* width: min(100% - 30px, 1080px); */
+  margin-inline: auto;
+  padding-top: var(--container-padding, 20px);
+  padding-bottom: var(--container-padding, 20px);
+  box-sizing: border-box;
 }
 
-/* -------------------------------- GLOBAL -------------------------------- */
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* ----------------------------- COLOR PALETTE ----------------------------- */
 
 :root {
-    --app-text-color: #fff;
-    --app-button-background-color: #8f0310;
+  --red-900: #430d0d;
+  --red-800: #581111;
+  --red-700: #6d1515;
+  --red-600: #8f0310;
+  --red-500: #981d1d;
+  --red-400: #ae2121;
+  --red-300: #c32525;
+  --red-200: #d93939;
+  --red-100: #e3989e;
+  --black-900: #333;
+  --white: #fcfcfc;
 }
+
+/* ------------------------------ BASIC RESET ------------------------------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  border-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------------------- */
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+  background-color: var(--white);
+  color: var(--black-900);
 }
-
-.button {
-    text-decoration: none;
-    color: var(--app-text-color);
-    display: inline-block;
-    background-color: var(--app-button-background-color);
-    padding: 10px 20px;
-    border-radius: 100px;
-    font-size: 13px;
-    font-weight: 500;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-color: rgba(0,0,0,0);
-    border-width: 0px;
-    letter-spacing: 2px;
-}
-
-li {
-    list-style: none;
-}
-
-.container-flexbox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* -------------------------------- HEADER -------------------------------- */
-
-header {
-    background-color: var(--app-button-background-color);
-    padding: 20px 0px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    color: var(--app-text-color);
-}
-
-h1 {
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    flex-grow: 1;
-}
-
-nav {
-    flex-grow: 3;
-}
-
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    justify-content: space-evenly;
-    gap: 5px;
-}
-
-header a {
-    display: block;
-    text-decoration: none;
-    color: var(--app-text-color);
-}
-
-/* --------------------------------- MAIN --------------------------------- */
-
-/* -------------------------------- FOOTER -------------------------------- */
 
 /* --------------------------------- MEDIA --------------------------------- */
 
-/* @media screen and (max-width: 768px) {
-    header {
-        padding: 20px 10px;
-    }
-    .container {
-        padding: 0px 10px;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 5px 0px;
-    }
-    .container-flexbox {
-        flex-direction: column;
-    }
-    .container-flexbox > * {
-        margin: 10px 0px;
-    }
-} */
+@media (min-width: 768px) {
+  .container {
+    --max-container-width: 1400px;
+    --container-padding: 30px;
+  }
+}
 
+/* ------------------------------------------------------------------------ */
+/*                                HEADER                                    */
+/* ------------------------------------------------------------------------ */
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header img {
+  width: 90px;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.desktop-nav a:nth-of-type(1) {
+  display: none;
+}
+
+.desktop-nav a {
+  color: var(--black-900);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff00;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+}
+
+.desktop-nav a:hover {
+  color: var(--white);
+  background-color: var(--red-600);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ------------------------------------------------------------------------ */
+/*                         HERO BANNER                                      */
+/* ------------------------------------------------------------------------ */
+
+.hero-banner h1 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-banner img {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: var(--red-600);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  box-shadow: #333 0px 0px 20px -12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--red-500);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: url(../img/hero-banner.jpg) no-repeat center center/cover;
+  background-position: 0% 100%;
+}
+
+/* ------------------------------------------------------------------------ */
+/*                         OUR OFFERINGS                                    */
+/* ------------------------------------------------------------------------ */
+
+section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section-bg {
+  /* background-image: url(../img/pernil-2.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrap-flex {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.our-offerings h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.our-offerings h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.our-offerings p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.our-offerings .btn {
+    margin-top: 2rem;
+}
+
+.less-width {
+    width: 40%;
+}
+
+.two-badge-small-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.homemade-food,
+.menu-variety {
+    width: 80px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: #333 0px 0px 20px -12px;
+    border-radius: 50%;
+}
