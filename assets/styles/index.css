@@ -326,47 +326,113 @@ section {
 }
 
 .our-offerings h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 .our-offerings h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .our-offerings p {
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .our-offerings .btn {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .less-width {
-    width: 40%;
+  width: 40%;
 }
 
 .two-badge-small-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5rem;
-    width: 50%;
-    margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  width: 50%;
+  margin-top: 2rem;
 }
 
 .homemade-food,
 .menu-variety {
-    width: 80px;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    box-shadow: #333 0px 0px 20px -12px;
-    border-radius: 50%;
+  width: 80px;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: #333 0px 0px 20px -12px;
+  border-radius: 50%;
+}
+
+/* ------------------------------------------------------------------------ */
+/*                         Three Cards                                      */
+/* ------------------------------------------------------------------------ */
+
+.bg-color {
+  background-color: var(--white);
+  padding: 2rem 0;
+}
+
+.three-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  height: 400px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-1 a,
+.card-2 a,
+.card-3 a {
+  color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: #ffffff3e;
+  border: 1px solid var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin-top: 200px;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-1 a:hover,
+.card-2 a:hover,
+.card-3 a:hover {
+  background-color: var(--white);
+  color: var(--red-600);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.card-1 {
+  background: url(../img/avocado-bacon.jpg) no-repeat center center/cover;
+  border-radius: 0.4rem;
+}
+
+.card-2 {
+  background: url(../img/pernil-2.jpg) no-repeat center center/cover;
+  border-radius: 0.4rem;
+  background-position-x: 50%;
+}
+
+.card-3 {
+  background: url(../img/desserts.jpg) no-repeat center center/cover;
+  border-radius: 0.4rem;
 }
