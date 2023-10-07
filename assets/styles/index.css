@@ -263,6 +263,21 @@ header img {
 /*                         HERO BANNER                                      */
 /* ------------------------------------------------------------------------ */
 
+.curved {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(../img/hero-banner.jpg) no-repeat center center/cover;
+  background-position: 0% 100%;
+}
+
 .hero-banner h1 {
   font-size: 1.3rem;
   letter-spacing: 0.2rem;
@@ -292,16 +307,6 @@ header img {
 .btn:hover {
   background-color: var(--red-500);
   transition: all 0.3s ease-in-out;
-}
-
-.hero-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-  background: url(../img/hero-banner.jpg) no-repeat center center/cover;
-  background-position: 0% 100%;
 }
 
 /* ------------------------------------------------------------------------ */
