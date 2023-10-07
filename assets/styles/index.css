@@ -239,10 +239,6 @@ header img {
   gap: 0.5rem;
 }
 
-.desktop-nav a:nth-of-type(1) {
-  display: none;
-}
-
 .desktop-nav a {
   color: var(--black-900);
   font-weight: 600;
@@ -263,11 +259,6 @@ header img {
 /*                         HERO BANNER                                      */
 /* ------------------------------------------------------------------------ */
 
-.curved {
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-}
-
 .hero-banner {
   display: flex;
   flex-direction: column;
@@ -275,7 +266,7 @@ header img {
   justify-content: center;
   height: 100vh;
   background: url(../img/hero-banner.jpg) no-repeat center center/cover;
-  background-position: 0% 100%;
+  background-position: 30% 100%;
 }
 
 .hero-banner h1 {
