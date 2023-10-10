@@ -35,7 +35,9 @@ If you have any questions or would like to get in touch with us, please feel fre
 In the future, we plan to implement a shopping experience where customers can order food catering packages tailored to the number of people they plan to host at their events. 📦
 
 ## Screenshots
-![Home page]()
+![Home page](https://raw.githubusercontent.com/stefanoturcarelli/catering-bien-casero/main/assets/img/Screenshot%202023-10-10%20134642.png)
+
+![Flexbox cards](https://raw.githubusercontent.com/stefanoturcarelli/catering-bien-casero/main/assets/img/Screenshot%202023-10-10%20134703.png)
 
 ## License 📄
 
