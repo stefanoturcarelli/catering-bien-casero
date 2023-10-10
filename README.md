@@ -34,6 +34,9 @@ If you have any questions or would like to get in touch with us, please feel fre
 
 In the future, we plan to implement a shopping experience where customers can order food catering packages tailored to the number of people they plan to host at their events. 📦
 
+## Screenshots
+![Home page]()
+
 ## License 📄
 
 **Note:** We haven't chosen a license for this project yet.
