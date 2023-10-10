@@ -20,7 +20,46 @@ We would like to acknowledge the following individuals for their contributions a
 
 ## Contact Information 📧
 
-If you have any questions or would like to get in touch with us, please feel free to send an email to: [catering-bien-casero@sgtr.dev](mailto:catering-bien-casero@sgtr.dev) 📩
+If you have any questions or would like to get in touch with us, please feel free to send an email to [catering-bien-casero@sgtr.dev](mailto:catering-bien-casero@sgtr.dev) 📩
+
+## WhatsApp Button
+HTML  
+
+        <body>
+          <!-- WhatsApp Button -->
+          <a href="https://wa.me/5491160328777" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <header>
+          </header>
+        </body>
+
+CSS  
+
+        .whatsapp-button {
+          position: fixed;
+          bottom: 1rem;
+          right: 1rem;
+          width: 70px;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1000;
+          background-color: #25D366;
+          color: var(--white);
+          border-radius: 50%;
+          font-weight: 600;
+          font-size: 2.5rem;
+          text-decoration: none;
+          box-shadow: #333 0px 0px 20px -15px;
+          transition: all 0.3s ease-in-out;
+        }
+        
+        .whatsapp-button:hover {
+          background-color: #075E54;
+          transition: all 0.3s ease-in-out;
+        }
 
 ## Project Goals 🎯
 
