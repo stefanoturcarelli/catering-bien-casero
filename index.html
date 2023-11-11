@@ -2,19 +2,17 @@
 <html class="no-js" lang="en" dir="ltr">
 
 <head>
-  <!-- Head tags based on HTML5 Boilerplate -->
-  <!-- https://github.com/h5bp/html5-boilerplate-template -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stefano Turcarelli</title>
 
-  <meta name="description" content="Portfolio Website">
+  <meta name="description" content="Catering Bien Casero">
   <meta name="theme-color" content="#fafafa">
 
-  <meta property="og:title" content="Stefano Turcarelli | Portfolio Website">
+  <meta property="og:title" content="Catering Bien Casero">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stefanoturcarelli.github.io/website/">
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/67341828?v=4">
+  <meta property="og:url" content="https://stefanoturcarelli.github.io/catering-bien-casero/">
+  <meta property="og:image" content="https://stefanoturcarelli.github.io/catering-bien-casero/assets/img/favicon.png">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -38,22 +36,22 @@
     <div class="container">
       <div class="container-flexbox">
         <div class="logo">
-          <a href="./index.html">
+          <a href="#">
             <img src="./assets/img/favicon.png" alt="Catering Bien Casero Logo">
           </a>
         </div>
         <!-- Desktop Nav -->
         <nav class="desktop-nav">
-          <a href="./index.html">Home</a>
-          <a href="./services.html">Services</a>
-          <a href="./about.html">About us</a>
-          <a href="./contact.html">Contact us</a>
-          <a href="./book.html">Book now</a>
+          <!-- <a href="./index.html">Home</a> -->
+          <a href="#services">Services</a>
+          <a href="#about">About us</a>
+          <a href="#contact">Contact us</a>
+          <a href="#contact">Book now</a>
         </nav>
       </div>
     </div>
   </header>
-  
+
   <main>
     <!-- Hero banner -->
     <div class="hero-banner">
@@ -95,7 +93,7 @@
     </section>
 
     <!-- Three Cards -->
-    <section class="container three-cards">
+    <section id="services" class="container three-cards">
       <div class="card-1">
         <a href="#">Catering</a>
       </div>
@@ -132,7 +130,7 @@
     </div>
 
     <!-- About Us -->
-    <section class="container">
+    <section id="about" class="container">
       <div class="flex-about-us">
         <div class="about-us">
           <h2>About Us</h2>
@@ -156,9 +154,42 @@
     </section>
     <section class="reviews">
       <h2>Reviews</h2>
+      <div class="reviews-container">
+        <div class="faq-card">
+          <p>
+            “Delicious! Very rich sauces. We ate that night, and we had plenty left for the next day. Highly
+            recommended. Thanks for the attention" -- Maru
+          </p>
+          <img class="rating" src="./assets/img/stars.png" alt="five stars rating">
+        </div>
+        <div class="faq-card">
+          <p>
+            “The leg is spectacular. All the guests said that he was very good. Exquisite, he loved everyone. Very good,
+            very abundant, it was incredible!” -- Mariana
+          </p>
+          <img class="rating" src="./assets/img/stars.png" alt="five stars rating">
+        </div>
+        <div class="faq-card">
+          <p>
+            "We loved it. We ordered it again, on 12/24 and on 12/31 we tasted the pork and the sauces. The one with
+            cream cheese and greenery got all the praise. “Super recommended!” -- Gisela
+          </p>
+          <img class="rating" src="./assets/img/stars.png" alt="five stars rating">
+        </div>
+        <div class="faq-card">
+          <p>
+            “The ham is delicious, tender, one of those quality, I congratulate you. The sauces are ten, everyone very
+            much liked them, you made me look really good. Thank you!" -- Aquiles
+          </p>
+          <img class="rating" src="./assets/img/stars.png" alt="five stars rating">
+        </div>
+      </div>
     </section>
     <section class="referral">
       <h2>Join our referral program!</h2>
+      <p>
+        Get a 10% discount on your next purchase with each friend you refer and places their first order.
+      </p>
     </section>
     <section class="faq">
       <h2>Frequent questions</h2>
@@ -206,7 +237,7 @@
       </div>
     </section>
   </main>
-  <footer>
+  <footer id="contact">
     <div class="box">
       <h2>Contact Us</h2>
       <p>We would love to hear from you!</p>

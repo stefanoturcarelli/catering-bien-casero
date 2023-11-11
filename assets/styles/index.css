@@ -115,15 +115,26 @@ section {
   padding: 10rem 0;
 }
 
+/* * Reviews Section */
+
+.reviews-container {
+  display: flex;
+}
+
+.rating {
+  width: 50%;
+}
+
 /* * FAQ Section */
 
 .faq h2,
 .referral h2,
-.reviews h2 {
-  font-size: 4rem;
+.reviews h2,
+.box h2 {
+  font-size: 2rem;
   color: #7C1919;
   text-align: center;
-  margin-bottom: 5rem;
+  margin: 3rem 0;
 }
 
 .faq-card-container {
@@ -148,6 +159,10 @@ section {
   color: #7C1919;
 }
 
+.referral {
+  text-align: center;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -166,7 +181,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   padding: 2rem 0;
 }
 
@@ -191,7 +205,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .box__3 {
@@ -199,17 +213,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   padding: 2rem 0;
 }
 
 /* ! Old CSS */
-@charset "utf-8";
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 html,
 body,
@@ -460,6 +467,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .container-flexbox {
@@ -470,7 +478,7 @@ header {
 }
 
 header img {
-  width: 90px;
+  width: 5rem;
 }
 
 .desktop-nav {
