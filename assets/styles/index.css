@@ -132,7 +132,7 @@ section {
 .reviews h2,
 .box h2 {
   font-size: 2rem;
-  color: #7C1919;
+  color: #7c1919;
   text-align: center;
   margin: 3rem 0;
 }
@@ -156,7 +156,7 @@ section {
 }
 
 .faq-card h3 {
-  color: #7C1919;
+  color: #7c1919;
 }
 
 .referral {
@@ -428,7 +428,6 @@ body {
   font-weight: 400;
 }
 
-
 /* ------------------------------------------------------------------------ */
 /*                              WHATSAPP BUTTON                              */
 /* ------------------------------------------------------------------------ */
@@ -443,7 +442,7 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  background-color: #25D366;
+  background-color: #25d366;
   color: var(--white);
   border-radius: 50%;
   font-weight: 600;
@@ -454,7 +453,7 @@ body {
 }
 
 .whatsapp-button:hover {
-  background-color: #075E54;
+  background-color: #075e54;
   transition: all 0.3s ease-in-out;
 }
 
@@ -557,7 +556,6 @@ section {
 }
 
 .section-bg {
-  /* background-image: url(../img/pernil-2.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -574,6 +572,19 @@ section {
 
 .our-offerings {
   position: relative;
+}
+
+.our-offerings::before {
+  position: absolute;
+  content: "";
+  width: 45rem;
+  height: 45rem;
+  left: 50rem;
+  top: 0rem;
+  border-radius: 50%;
+  background-size: cover;
+  background: radial-gradient(circle at top, #33333300 50%, #eee 90%);
+  z-index: 99;
 }
 
 .our-offerings::after {
