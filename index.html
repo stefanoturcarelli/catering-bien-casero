@@ -1,287 +1,142 @@
-<!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stefano Turcarelli</title>
-
-  <meta name="description" content="Catering Bien Casero">
-  <meta name="theme-color" content="#fafafa">
-
-  <meta property="og:title" content="Catering Bien Casero">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stefanoturcarelli.github.io/catering-bien-casero/">
-  <meta property="og:image" content="https://stefanoturcarelli.github.io/catering-bien-casero/assets/img/favicon.png">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="manifest" href="site.webmanifest">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catering Bien Casero</title>
+  <link rel="stylesheet" href="./assets/styles/reset.css">
   <link rel="stylesheet" href="./assets/styles/index.css">
-  <script src="./assets/script.js" defer></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- WhatsApp Button -->
-  <a href="https://api.whatsapp.com/send?phone=5491160328777&fbclid=IwAR0w1l_-ZhOvdK-QbpFKquGPC2SOWbbR7qbRyge4rr3NkJzeD28mbqNTwo8"
-    target="_blank" rel="noopener noreferrer" class="whatsapp-button">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <header>
-    <div class="container">
-      <div class="container-flexbox">
-        <div class="logo">
-          <a href="#">
-            <img src="./assets/img/favicon.png" alt="Catering Bien Casero Logo">
-          </a>
-        </div>
-        <!-- Desktop Nav -->
-        <nav class="desktop-nav">
-          <!-- <a href="./index.html">Home</a> -->
-          <a href="#services">Services</a>
-          <a href="#about">About us</a>
-          <a href="#contact">Contact us</a>
-          <a href="#contact">Book now</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-
+  <header></header>
   <main>
-    <!-- Hero banner -->
-    <div class="hero-banner">
-      <h1>Catering</h1>
-      <img src="./assets/img/vector-logo.png" alt="Catering Bien Casero">
-      <a class="btn" href="#">Get a quote!</a>
-    </div>
-
-    <!-- Side by side -->
-    <section class="our-offerings section-bg">
-      <div class="container wrap-flex">
-        <h2>Get to know our proposals</h2>
-        <div class="less-width">
-          <p>
-            We prepare customized budgets based on your needs.
-          </p>
-          <p>
-            Tell us what type of event it is and for how many people,
-            and we will advise you with the best options.
-          </p>
+    <section class="hero-banner">
+      <div class="container">
+        <div class="hero-banner-container">
+          <p class="hero-banner-text">CATERING</p>
+          <img class="hero-banner-logo" src="./assets/img/vector-logo.png" alt="Catering Bien Casero">
+          <button class="hero-banner-button">¡CONSEGUÍ TU PRESUPUESTO!</button>
         </div>
-        <a class="btn" href="#">Menu options</a>
-        <div class="two-badge-small-section">
-          <div>
-            <img class="homemade-food" src="./assets/img/heart-icon.png" alt="Homemade food made with love">
-            <h3>Homemade food made with love</h3>
-            <p>Catering for all types of events and meetings
-              (pss! and for those days when you don't want to cook, too)</p>
+      </div>
+    </section>
+    <section class="our-offers">
+      <div class="container">
+        <div class="our-offers-container">
+          <div class="our-offers-content-container">
+            <div class="our-offers-container-1">
+              <h2>Conocé nuestras propuestas</h2>
+              <p>
+                Elaboramos presupuestos a medida en base a tus necesidades.
+                Contanos qué tipo de evento es y para cuántas
+                personas, y te asesoramos con las mejores opciones.
+              </p>
+              <button class="our-offers-button">OPCIONES DE MENÚ</button>
+            </div>
+            <div class="our-offers-container-2">
+              <div>
+                <img src="./assets/img/heart-icon.png" alt="Comida casera hecha con amor">
+                <p class="our-offers-container-2-title">Comida casera hecha con amor</p>
+                <p>
+                  Catering para todo tipo de eventos y reuniones
+                  (¡pss! y para esos días que no querés cocinar, también)
+                </p>
+              </div>
+              <div>
+                <img src="./assets/img/silverware.png" alt="Variedad de menu">
+                <p class="our-offers-container-2-title">Variedad de menú</p>
+                <p>
+                  Opciones sin TACC y vegetarianas, ¡para que nadie se quede afuera!
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img class="menu-variety" src="./assets/img/silverware.png" alt="Meny variety">
-            <h3>Menu variety</h3>
+          <div class="our-offers-image-container">
+            <img src="./assets/img/pernil.jpg" alt="Pernil de cerdo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="three-cards">
+      <div class="container">
+        <div class="three-cards-container">
+          <div class="three-cards-1">
+            <a class="three-cards-button" href="">Catering</a>
+          </div>
+          <div class="three-cards-2">
+            <a class="three-cards-button" href="">Perniles</a>
+          </div>
+          <div class="three-cards-3">
+            <a class="three-cards-button" href="">Postres</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gluten-free-veggie-business">
+      <div class="container">
+        <div class="gluten-free-veggie-business-container">
+          <div class="gluten-free-card">
+            <p>Menú sin TACC</p>
             <p>
-              TACC-free and vegetarian options, so no one is left out!
+              El mismo sabor de siempre, sin TACC
             </p>
+            <button class="gluten-free-veggie-business-button">VER MÁS</button>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Three Cards -->
-    <section id="services" class="container three-cards">
-      <div class="card-1">
-        <a href="#">Catering</a>
-      </div>
-      <div class="card-2">
-        <a href="#"> Roasted Pork Leg</a>
-      </div>
-      <div class="card-3">
-        <a href="#">Desserts</a>
-      </div>
-    </section>
-
-    <!-- Three cards TACC free, vegetarian, business -->
-    <div class="bg-color">
-      <section class="container">
-        <h2 class="tacc-veggie-business-title">TACC-free, vegetarian and business options</h2>
-        <div class="tacc-veggie-business">
-          <div class="tacc-free-card">
-            <h3>TACC Free Menu</h3>
-            <p>The same flavor as always, without TACC</p>
-            <a href="#" class="btn">Know More</a>
-          </div>
-          <div class="vegetarian-card">
-            <h3>Vegetarian Menu</h3>
-            <p>Great variety, for all tastes</p>
-            <a href="#" class="btn">Know More</a>
+          <div class="veggie-card">
+            <p>Menú vegetariano</p>
+            <p>
+              Gran variedad, para todos los gustos
+            </p>
+            <button class="gluten-free-veggie-business-button">VER MÁS</button>
           </div>
           <div class="business-box-card">
-            <h3>Business Box</h3>
-            <p>A complete and customizable box</p>
-            <a href="#" class="btn">Know More</a>
+            <p>Box Empresarial</p>
+            <p>
+              Una caja completa y personalizable
+            </p>
+            <button class="gluten-free-veggie-business-button">VER MÁS</button>
           </div>
         </div>
-      </section>
-    </div>
-
-    <!-- About Us -->
-    <section id="about" class="container">
-      <div class="flex-about-us">
-        <div class="about-us">
-          <h2>About Us</h2>
-          <h3>Jonatan - Soul of this entrepreneurship</h3>
-          <p>It all started as a hobby, cooking for my family and friends.
-            I took several courses and also studied to be a
-            Chef.
-          </p>
-          <p>
-            For more than two years, Catering Bien Casaro is my way of showing
-            everyone how much I love cooking and
-            bringing delicious, abundant, homemade and quality food to their
-            homes.
-          </p>
-          <a class="btn" href="#">Know More</a>
-        </div>
-        <div class="joni-img-container">
-          <img class="joni" src="./assets/img/jonatan-moreira.png" alt="Jonatan">
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <div class="about-us-container">
+          <div class="about-us-text-content">
+            <h2>Nosotros</h2>
+            <p>Jonatan – Alma de este emprendimiento</p>
+            <p>
+              Todo comenzó como un hobbie, cocinando para mi familia y amigos.
+              Hice varios cursos y también estudié para Chef.
+            </p>
+            <p>
+              Hace más de dos años, Catering Bien Casero es mi forma de
+              demostrarle a todos lo mucho que amo cocinar y
+              llevar a sus casas comida rica, abundante, casera y de calidad.
+            </p>
+            <button class="about-us-button">CONOCENOS MÁS</button>
+          </div>
+          <div class="about-us-image">
+            <img src="./assets/img/jonatan-moreira.png" alt="Jonatan">
+          </div>
         </div>
       </div>
     </section>
-    <section class="reviews">
-      <h2>Reviews</h2>
-      <div class="reviews-container">
-        <div class="faq-card">
-          <p>
-            “Delicious! Very rich sauces. We ate that night, and we had plenty left for the next day. Highly
-            recommended. Thanks for the attention" -- Maru
-          </p>
-          <img class="rating" src="./assets/img/stars.png" alt="five stars rating">
-        </div>
-        <div class="faq-card">
-          <p>
-            “The leg is spectacular. All the guests said that he was very good. Exquisite, he loved everyone. Very good,
-            very abundant, it was incredible!” -- Mariana
-          </p>
-          <img class="rating" src="./assets/img/stars.png" alt="five stars rating">
-        </div>
-        <div class="faq-card">
-          <p>
-            "We loved it. We ordered it again, on 12/24 and on 12/31 we tasted the pork and the sauces. The one with
-            cream cheese and greenery got all the praise. “Super recommended!” -- Gisela
-          </p>
-          <img class="rating" src="./assets/img/stars.png" alt="five stars rating">
-        </div>
-        <div class="faq-card">
-          <p>
-            “The ham is delicious, tender, one of those quality, I congratulate you. The sauces are ten, everyone very
-            much liked them, you made me look really good. Thank you!" -- Aquiles
-          </p>
-          <img class="rating" src="./assets/img/stars.png" alt="five stars rating">
-        </div>
-      </div>
-    </section>
-    <section class="referral">
-      <h2>Join our referral program!</h2>
-      <p>
-        Get a 10% discount on your next purchase with each friend you refer and places their first order.
-      </p>
-    </section>
-    <section class="faq">
-      <h2>Frequent questions</h2>
-      <div class="faq-card-container">
-        <div class="faq-card">
-          <h3>HOW DO I PLACE MY ORDER?</h3>
-          <p>
-            Contact us through social networks, WhatsApp or fill out the contact form. Once we coordinate, we will ask
-            you for a 50% deposit to reserve your order. The remaining 50% can be paid on the day of delivery. </p>
-        </div>
-        <div class="faq-card">
-          <h3>HOW CAN I PAY?</h3>
-          <p>
-            We accept cash, bank transfer and Mercado Pago.
-          </p>
-        </div>
-        <div class="faq-card">
-          <h3>HOW DOES THE REFERRAL PROGRAM WORK?</h3>
-          <p>
-            For every friend you refer and hire us, we will give you a 10% discount coupon to use on your next order
-            with
-            us. It is valid for two months once the coupon is obtained.
-          </p>
-        </div>
-        <div class="faq-card">
-          <h3>HOW LONG IN ADVANCE SHOULD I PLACE THE ORDER?</h3>
-          <p>
-            The hams 72 hours in advance is sufficient. Personalized catering at least a week in advance.
-          </p>
-        </div>
-        <div class="faq-card">
-          <h3>WHAT IS THE SHIPPING COST?</h3>
-          <p>
-            We offer free shipping in the areas of Gregorio de Laferrere, Isidro Casanova, Rafael Castillo and San
-            Justo.
-            For other areas, the shipping price can be coordinated by WhatsApp.
-          </p>
-        </div>
-        <div class="faq-card">
-          <h3>DO YOU MAKE AN INVOICE?</h3>
-          <p>
-            Yes of course! We issue invoice C.
-          </p>
+    <section class="customer-reviews">
+      <div class="container">
+        <div class="customer-reviews-container">
+          
         </div>
       </div>
     </section>
   </main>
-  <footer id="contact">
-    <div class="box">
-      <h2>Contact Us</h2>
-      <p>We would love to hear from you!</p>
-      <div class="box__1">
-        <a href="https://www.facebook.com/cateringbiencasero" target="_blank">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/catering_bien_casero/" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-    <div class="box__2">
-      <div class="box__3">
-        <p>Email</p>
-        <p>
-          <a href="mailto:info@cateringbiencasero.com">
-            info@cateringbiencasero.com
-          </a>
-        </p>
-      </div>
-      <div class="box__3">
-        <p>Phone / WhatsApp</p>
-        <p>
-          <a
-            href="https://api.whatsapp.com/send?phone=5491160328777&fbclid=IwAR0w1l_-ZhOvdK-QbpFKquGPC2SOWbbR7qbRyge4rr3NkJzeD28mbqNTwo8">(011)
-            6032-8777
-          </a>
-        </p>
-      </div>
-      <div class="box__3">
-        <p>Location</p>
-        <p><a href="">Zona Oeste, Buenos Aires</a></p>
-      </div>
-      <div class="box__3">
-        <p>Work Hours</p>
-        <p>Lunes a Sabado: 10 a 20 hs</p>
-      </div>
-    </div>
-  </footer>
+
 </body>
-<noscript>
-  <p>This website needs a JavaScript browser</p>
-</noscript>
 
 </html>
