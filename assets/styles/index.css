@@ -45,7 +45,8 @@ section {
 .hero-banner-button,
 .our-offers-button,
 .gluten-free-veggie-business-button,
-.about-us-button {
+.about-us-button,
+.referral-program-button {
   color: #fff;
   background-color: #8f0310;
   padding: 2rem 2.5rem;
@@ -403,3 +404,111 @@ section {
 }
 
 /* ! Section Customer Reviews */
+
+
+/* ! Section Referral Program */
+
+.referral-program-container {
+  background-image: url(../img/referidos2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.referral-program-text {
+  text-align: center;
+  padding: 20rem 0;
+}
+
+.referral-program-text>* {
+  padding: 2rem 0;
+}
+
+/* ! Section Frecuent questions */
+.frecuent-questions-text {
+  text-align: center;
+}
+
+.frecuent-questions-boxes-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 1.5rem;
+}
+
+.question-card {
+  color: #000;
+  background-color: #f2f2f2;
+  padding: 2rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1.5rem;
+  border-radius: 2mm;
+  width: 95%;
+}
+
+.question-card p:first-child {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .frecuent-questions-boxes-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .frecuent-questions-boxes-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ! Section Contact us (Footer) */
+.contact-us-background-image {
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  z-index: -1;
+}
+
+.contact-us-text {
+  text-align: center;
+}
+
+.contact-info-boxes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1rem;
+}
+
+.contact-info-card {
+  color: #000;
+  background-color: #f2f2f2;
+  padding: 2rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 1rem;
+  border-radius: 2mm;
+  width: 95%;
+}
+
+.contact-info-card p:first-child {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-info-boxes-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .contact-info-boxes-container {
+    grid-template-columns: 1fr;
+  }
+}
