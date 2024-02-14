@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 section {
   padding: 5rem 0;
 }
@@ -17,6 +18,32 @@ section {
   --bien-casero-deep-red: #8F0310;
   --bien-casero-green: #038F82;
 }
+
+.section-title {
+  font-size: 3rem;
+}
+
+
+/* ! Whatsapp button -------------------------------------------------------- */
+.whatsapp-button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
 
 /* ! Header ----------------------------------------------------------------- */
 
@@ -53,20 +80,19 @@ header {
 
 .header-menu-links div:hover {
   color: var(--bien-casero-deep-red);
-  font-weight: 500;
 }
 
 /* ! Section Hero Banner */
 
 .hero-banner {
-  background-image: url(../img/hero-banner-background.jpg);
+  background-image: url(../img/Hero-banner-background-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 80svh;
   display: grid;
-  border-bottom-left-radius: 50% 20%;
-  border-bottom-right-radius: 50% 20%;
+  border-bottom-left-radius: 45% 20%;
+  border-bottom-right-radius: 45% 20%;
 }
 
 .hero-banner-container {
@@ -136,7 +162,7 @@ header {
 
 .our-offers-container-1 {
   display: grid;
-  grid-template-columns: 50%;
+  grid-template-columns: 95%;
   justify-items: start;
   gap: 2.5rem;
   padding-bottom: 5rem;
@@ -165,13 +191,6 @@ header {
   width: 70px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 50%;
-}
-
-.our-offers-image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20%;
 }
 
 @media (max-width: 768px) {
@@ -263,11 +282,11 @@ header {
 /* ! Section Three Cards */
 
 .three-cards-container {
-  height: 80svh;
+  height: 60svh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: stretch;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .three-cards-1 {
@@ -275,17 +294,15 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80%;
   position: relative;
   border-radius: 0.5rem;
 }
 
 .three-cards-2 {
-  background-image: url(../img/pernil-2.jpg);
+  background-image: url(../img/Pernil-3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80%;
   position: relative;
   border-radius: 0.5rem;
 }
@@ -295,7 +312,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 80%;
   position: relative;
   border-radius: 0.5rem;
 }
@@ -350,19 +366,32 @@ header {
 
 /* ! Section Gluten Free Vegetarian and Business */
 
-.gluten-free-veggie-business {
-  background: linear-gradient(to top, #c07078, #940e1b 100%);
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  align-items: center;
+.gluten-free-veggie-business-image {
+  background-image: url(../img/Background-gluten-free-veggie-business.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90svh;
+  /* display: grid; */
+}
+
+.gluten-free-veggie-business-container-title {
+  color: #fff;
+  padding-top: 13rem;
 }
 
 .gluten-free-veggie-business-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 2.5rem;
+  padding-top: 6rem;
+}
+
+.gluten-free-veggie-business-round-images {
+  border-radius: 50%;
+  height: 12rem;
+  position: relative;
+  margin-top: -5rem;
 }
 
 .gluten-free-card,
@@ -370,16 +399,15 @@ header {
 .business-box-card {
   background-color: #fff;
   color: #000;
-  padding: 2rem 2.5rem;
+  padding: 1.5rem 2.5rem;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  gap: 2.5rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
 }
 
-.gluten-free-card p:first-child,
-.veggie-card p:first-child,
-.business-box-card p:first-child {
+.gluten-free-veggie-business-cardtitle {
   font-weight: 600;
   font-size: 2rem;
 }
@@ -411,14 +439,20 @@ header {
   grid-template-rows: repeat(3, 1fr);
   justify-items: start;
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
+}
+
+.about-us-subtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--bien-casero-deep-red);
 }
 
 .about-us-image {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  align-items: center;
+  align-items: right;
 }
 
 .about-us-image img {
@@ -448,6 +482,83 @@ header {
 
 /* ! Section Customer Reviews */
 
+.customer-reviews-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  gap: 10rem;
+}
+
+.customer-reviews-corner-image img {
+height: 7rem;
+}
+
+.customer-reviews-container-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.review-card {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.review-card img {
+  max-width: 75px;
+  border-radius: 100%;
+}
+
+.review-card-content {
+  display: flex;
+  gap: 1rem;
+}
+
+.review-card-content span i {
+  font-size: 3rem;
+  color: var(--bien-casero-deep-red);
+}
+
+.review-card-details p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.review-card-details h4 {
+  text-align: right;
+  color: var(--bien-casero-deep-red);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (width < 1200px) {
+  .customer-reviews-container {
+    gap: 3rem;
+  }
+}
+
+@media (width < 900px) {
+  .customer-reviews-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .customer-reviews-container-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width < 750px) {
+  .customer-reviews-container-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 
 /* ! Section Referral Program */
 
@@ -458,18 +569,27 @@ header {
   background-repeat: no-repeat;
 }
 
-.referral-program-text {
-  text-align: center;
-  padding: 20rem 0;
+.referral-program-title {
+  color: var(--bien-casero-deep-red);
 }
 
-.referral-program-text>* {
+.referral-program-elements {
+  text-align: center;
+  padding: 8rem 0;
+}
+
+.referral-program-elements>* {
   padding: 2rem 0;
 }
 
+.referral-program-text {
+  font-size: 2rem;
+}
+
 /* ! Section Frecuent questions */
-.frecuent-questions-text {
+.frecuent-questions-title {
   text-align: center;
+  color: var(--bien-casero-deep-red);
 }
 
 .frecuent-questions-boxes-container {
@@ -477,11 +597,11 @@ header {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   gap: 1.5rem;
+  padding-top: 5rem;
 }
 
 .question-card {
   color: #000;
-  background-color: #f2f2f2;
   padding: 2rem 2.5rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -489,6 +609,9 @@ header {
   gap: 1.5rem;
   border-radius: 2mm;
   width: 95%;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .question-card p:first-child {

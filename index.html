@@ -21,7 +21,7 @@
 
 <body>
   <header>
-    <div class="container">
+    <div>
 			<div class="header-desktop-nav-bar">
 				<!-- Logo -->
 				<div class="header-logo-container">
@@ -54,12 +54,17 @@
 		</div>
   </header>
   <main>
+    <!-- WhatsApp Button -->
+		<a href="https://wa.me/5491160328777" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+			<i class="fab fa-whatsapp my-float"></i>
+		</a>
+
     <section class="hero-banner">
       <div class="container">
         <div class="hero-banner-container">
           <p class="hero-banner-text">CATERING</p>
           <img class="hero-banner-logo" src="./assets/img/vector-logo.png" alt="Catering Bien Casero">
-          <button class="hero-banner-button">¡CONSEGUÍ TU PRESUPUESTO!</button>
+          <a href="contact.html"><button class="hero-banner-button">¡CONSEGUÍ TU PRESUPUESTO!</button></a>
         </div>
       </div>
     </section>
@@ -68,13 +73,13 @@
         <div class="our-offers-container">
           <div class="our-offers-content-container">
             <div class="our-offers-container-1">
-              <h2>Conocé nuestras propuestas</h2>
+              <h2 class="section-title">Conocé nuestras propuestas</h2>
               <p>
                 Elaboramos presupuestos a medida en base a tus necesidades.
                 Contanos qué tipo de evento es y para cuántas
                 personas, y te asesoramos con las mejores opciones.
               </p>
-              <button class="our-offers-button">OPCIONES DE MENÚ</button>
+              <a href="services.html"><button class="our-offers-button">OPCIONES DE MENÚ</button></a>
             </div>
             <div class="our-offers-container-2">
               <div>
@@ -95,7 +100,7 @@
             </div>
           </div>
           <div class="our-offers-image-container">
-            <img src="./assets/img/pernil.jpg" alt="Pernil de cerdo">
+            <img src="./assets/img/Pernil-portada.png" alt="Pernil de cerdo">
           </div>
         </div>
       </div>
@@ -104,41 +109,46 @@
       <div class="container">
         <div class="three-cards-container">
           <div class="three-cards-1">
-            <a class="three-cards-button" href="">Catering</a>
+            <a class="three-cards-button" href="services.html">Catering</a>
           </div>
           <div class="three-cards-2">
-            <a class="three-cards-button" href="">Perniles</a>
+            <a class="three-cards-button" href="services.html">Perniles</a>
           </div>
           <div class="three-cards-3">
-            <a class="three-cards-button" href="">Postres</a>
+            <a class="three-cards-button" href="services.html">Postres</a>
           </div>
         </div>
       </div>
     </section>
     <section class="gluten-free-veggie-business">
-      <div class="container">
-        <h2>Opciones sin TACC, vegetarianas y empresariales</h2>
-        <div class="gluten-free-veggie-business-container">
-          <div class="gluten-free-card">
-            <p>Menú sin TACC</p>
-            <p>
-              El mismo sabor de siempre, sin TACC
-            </p>
-            <button class="gluten-free-veggie-business-button">VER MÁS</button>
-          </div>
-          <div class="veggie-card">
-            <p>Menú vegetariano</p>
-            <p>
-              Gran variedad, para todos los gustos
-            </p>
-            <button class="gluten-free-veggie-business-button">VER MÁS</button>
-          </div>
-          <div class="business-box-card">
-            <p>Box Empresarial</p>
-            <p>
-              Una caja completa y personalizable
-            </p>
-            <button class="gluten-free-veggie-business-button">VER MÁS</button>
+      <div class="gluten-free-veggie-business-image">
+        <div class="container">
+          <h2 class="gluten-free-veggie-business-container-title section-title">Opciones sin TACC, vegetarianas y empresariales</h2>
+          <div class="gluten-free-veggie-business-container">
+            <div class="gluten-free-card">
+              <img class="gluten-free-veggie-business-round-images" src="./assets/img/no-tacc.png" alt=""></img>
+              <p class="gluten-free-veggie-business-cardtitle">Menú sin TACC</p>
+              <p>
+                El mismo sabor de siempre, sin TACC
+              </p>
+              <a href="services.html"><button class="gluten-free-veggie-business-button">VER MÁS</button></a>
+            </div>
+            <div class="veggie-card">
+              <img class="gluten-free-veggie-business-round-images" src="./assets/img/hummus.png" alt=""></img>
+              <p class="gluten-free-veggie-business-cardtitle">Menú vegetariano</p>
+              <p>
+                Gran variedad, para todos los gustos
+              </p>
+              <a href="services.html"><button class="gluten-free-veggie-business-button">VER MÁS</button></a>
+            </div>
+            <div class="business-box-card">
+              <img class="gluten-free-veggie-business-round-images" src="./assets/img/business-lunch-box.png" alt=""></img>
+              <p class="gluten-free-veggie-business-cardtitle">Box Empresarial</p>
+              <p>
+                Una caja completa y personalizable
+              </p>
+              <a href="services.html"><button class="gluten-free-veggie-business-button">VER MÁS</button></a>
+            </div>
           </div>
         </div>
       </div>
@@ -147,8 +157,8 @@
       <div class="container">
         <div class="about-us-container">
           <div class="about-us-text-content">
-            <h2>Nosotros</h2>
-            <p>Jonatan – Alma de este emprendimiento</p>
+            <h2 class="section-title">Nosotros</h2>
+            <p class="about-us-subtitle">Jonatan – Alma de este emprendimiento</p>
             <p>
               Todo comenzó como un hobbie, cocinando para mi familia y amigos.
               Hice varios cursos y también estudié para Chef.
@@ -158,7 +168,7 @@
               demostrarle a todos lo mucho que amo cocinar y
               llevar a sus casas comida rica, abundante, casera y de calidad.
             </p>
-            <button class="about-us-button">CONOCENOS MÁS</button>
+            <a href="about.html"><button class="about-us-button">CONOCENOS MÁS</button></a>
           </div>
           <div class="about-us-image">
             <img src="./assets/img/jonatan-moreira.png" alt="Jonatan">
@@ -169,20 +179,79 @@
     <section class="customer-reviews">
       <div class="container">
         <div class="customer-reviews-container">
-
+          <div class="customer-reviews-corner-image"> <img src="./assets/img/reviews-corner.png" alt="kitchen-utensils"></div>
+          <!-- <h2 class="section-title">Lo que dicen de nuestro catering...</h2> -->
+          <div class="customer-reviews-container-cards">
+            <div class="review-card">
+              <img src="./assets/img/Client-woman-3.png" alt="user" />
+              <div class="review-card-content">
+                <span><i class="fa fa-quote-left"></i></span>
+                <div class="review-card-details">
+                  <p>
+                    ¡Riquisimo! Las salsas muy ricas. Comimos esa noche, y 
+                    nos quedó para el día siguiente, muy abundante. Muy 
+                    recomendable. Muchas gracias por la atención."
+                  </p>
+                  <h4>- Maru</h4>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <img src="./assets/img/Client-woman-2.png" alt="user" />
+              <div class="review-card-content">
+                <span><i class="fa fa-quote-left"></i></span>
+                <div class="review-card-details">
+                  <p>
+                    Nos encantó. Lo volvimos a pedir, el 24/12 y el 31/12 
+                    degustamos el pernil y las salsas. La de queso crema y 
+                    verdeo se llevó todos los halagos. ¡Super recomendable!"
+                  </p>
+                  <h4>- Gisela</h4>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <img src="./assets/img/Client-woman-1.png" alt="user" />
+              <div class="review-card-content">
+                <span><i class="fa fa-quote-left"></i></span>
+                <div class="review-card-details">
+                  <p>
+                    Espectacular el pernil. Todos los invitados decían que 
+                    estaba muy bueno. Exquisito, le encantó a todos.
+                    Muy bueno, muy abundante, estuvo increíble!"
+                  </p>
+                  <h4>- Mariana</h4>
+                </div>
+              </div>
+            </div>
+            <div class="review-card">
+              <img src="./assets/img/Client-man-1.png" alt="user" />
+              <div class="review-card-content">
+                <span><i class="fa fa-quote-left"></i></span>
+                <div class="review-card-details">
+                  <p>
+                    Riquísimo el pernil, tierno, una calidad de aquellas, los 
+                    felicito. Las salsas de diez, muy conforme toda la gente,
+                    me hiciste quedar re bien. ¡Gracias!"
+                  </p>
+                  <h4>- Aquiles</h4>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </section>
     <section class="referral-program">
       <div class="container">
         <div class="referral-program-container">
-          <div class="referral-program-text">
-            <h2>
+          <div class="referral-program-elements">
+            <h2 class="referral-program-title section-title">
               ¡Unite a nuestro programa de referidos!
             </h2>
-            <p>Obtené un 10% de descuento en tu próxima compra con cada
-              amigo al que refieras y realice su primer pedido.</p>
-            
+            <p class="referral-program-text">Obtené un 10% de descuento en tu 
+              próxima compra con cada amigo <br> al que refieras y realice su 
+              primer pedido.
+            </p>
             <div>
               <button class="referral-program-button">
                 ¿CÓMO FUNCIONA?
@@ -194,10 +263,10 @@
     <section class="frecuent-questions">
       <div class="container">
         <div class="frecuent-questions-container">
-          <h2 class="frecuent-questions-text">Preguntas frecuentes</h2>
+          <h2 class="frecuent-questions-title section-title">Preguntas frecuentes</h2>
           <div class="frecuent-questions-boxes-container">
             <div class="question-card">
-              <p>¿CÓMO HAGO MI PEDIDO?</p>
+              <p>¿Cómo hago mi pedido?</p>
               <p>
                 Contactanos por redes sociales, whatsapp o rellena el
                 formulario de contacto. Una vez que coordinamos, te pediremos
@@ -206,7 +275,7 @@
               </p>
             </div>
             <div class="question-card">
-              <p>¿CÚAL ES EL COSTO DE ENVÍO?</p>
+              <p>¿Cúal es el costo de envío?</p>
               <p>
                 Ofrecemos envío gratis en las zonas de Gregorio de Laferrere,
                 Isidro Casanova, Rafael Castillo y San Justo. Para otras zonas
@@ -214,14 +283,14 @@
               </p>
             </div>
             <div class="question-card">
-              <p>¿CON CUÁNTO TIEMPO DE ANTICIPACIÓN DEBO HACER EL PEDIDO?</p>
+              <p>¿Con cuánto tiempo de anticipación <br> debo hacer el pedido?</p>
               <p>
                 Los perniles con 72 hs de anticipación es suficiente. Los
                 caterings personalizados al menos con una semana de anticipación.
               </p>
             </div>
             <div class="question-card">
-              <p>¿CÓMO FUNCIONA EL PROGRAMA DE REFERIDOS?</p>
+              <p>¿Cómo funciona el programa de referidos?</p>
               <p>
                 Por cada amigo que recomiendes y nos contrate, te daremos un
                 cupón con un 10% de descuento para que lo utilices en tu
@@ -230,13 +299,13 @@
               </p>
             </div>
             <div class="question-card">
-              <p>¿CÓMO PUEDO ABONAR?</p>
+              <p>¿Cómo puedo abonar?</p>
               <p>
                 Aceptamos efectivo, transferencia bancaria y Mercado Pago.
               </p>
             </div>
             <div class="question-card">
-              <p>¿HACEN FACTURA?</p>
+              <p>¿Hacen factura?</p>
               <p>
                 ¡Si, por supuesto! Emitimos factura C.
               </p>
@@ -253,7 +322,7 @@
             <img src="/assets/img/footer-background.png" alt="elementos de cocina" />
           </div>
           <div class="contact-us-text">
-            <h2>
+            <h2 class="section-title">
               Contactanos
             </h2>
             <p>¡Te estamos esperando!</p>
