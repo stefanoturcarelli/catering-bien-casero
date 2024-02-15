@@ -490,7 +490,7 @@ header {
 }
 
 .customer-reviews-corner-image img {
-height: 7rem;
+  height: 7rem;
 }
 
 .customer-reviews-container-cards {
@@ -587,10 +587,19 @@ height: 7rem;
 }
 
 /* ! Section Frecuent questions */
+
+.col-1,
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .frecuent-questions-title {
   text-align: center;
   color: var(--bien-casero-deep-red);
 }
+
 
 .frecuent-questions-boxes-container {
   display: grid;
@@ -601,22 +610,39 @@ height: 7rem;
 }
 
 .question-card {
+  width: 100%;
   color: #000;
   padding: 2rem 2.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  gap: 1.5rem;
   border-radius: 2mm;
-  width: 95%;
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.question-card p:first-child {
+.question-card-title {
+  color: var(--bien-casero-deep-red);
+  text-align: center;
   font-weight: 600;
   font-size: 2rem;
+}
+
+.questions-icon i {
+  color: var(--bien-casero-deep-red);
+}
+
+.question-card-answer-text {
+  display: none;
+
+}
+
+.answer__displayed {
+  display: block;
+}
+
+.question-and-plus-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
