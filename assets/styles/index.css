@@ -158,6 +158,7 @@ header {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   gap: 5rem;
+  padding-top: 5rem;
 }
 
 .our-offers-container-1 {
@@ -165,7 +166,7 @@ header {
   grid-template-columns: 95%;
   justify-items: start;
   gap: 2.5rem;
-  padding-bottom: 5rem;
+  padding: 5rem 0;
 }
 
 .our-offers-container-2 {
@@ -674,32 +675,72 @@ header {
   z-index: -1;
 }
 
-.contact-us-text {
-  text-align: center;
+.contact-us-elements {
+  padding: 7rem 0;
 }
 
 .contact-info-boxes-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 1rem;
+  padding: 0 16rem;
 }
 
 .contact-info-card {
-  color: #000;
-  background-color: #f2f2f2;
-  padding: 2rem 2.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  gap: 1rem;
-  border-radius: 2mm;
-  width: 95%;
+  text-align: center;
 }
 
 .contact-info-card p:first-child {
   font-weight: 600;
   font-size: 1.2rem;
+  color: var(--bien-casero-deep-red);
+}
+
+.contact-us-text {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.icon-social-media-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: 3rem 46rem 4rem;
+}
+
+.icon-social-media i {
+  padding: 1.5rem;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.fa-facebook-f {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-facebook-f:hover {
+  background: white;
+  color: #3B5998;
+  transition: 0.2s;
+}
+
+.fa-instagram {
+  background: #E1306C;
+  color: white;
+}
+
+.fa-instagram:hover {
+  background: white;
+  color: #E1306C;
+  transition: 0.2s;
 }
 
 @media (max-width: 768px) {
