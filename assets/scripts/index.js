@@ -13,6 +13,14 @@ questionsIcon.forEach(icon => {
 
         // Toggle the class for the answer text
         answerText.classList.toggle("answer__displayed");
+
+        // Toggle between the two icons based on the presence of "answer__displayed" class
+        if (answerText.classList.contains("answer__displayed")) {
+            icon.innerHTML = '<i class="fa-solid fa-circle-minus"></i>';
+        } else {
+            icon.innerHTML = '<i class="fa-solid fa-circle-plus"></i>';
+        }
     });
 });
+
 

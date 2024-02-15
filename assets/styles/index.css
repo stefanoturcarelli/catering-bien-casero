@@ -620,10 +620,8 @@ header {
 }
 
 .question-card-title {
-  color: var(--bien-casero-deep-red);
-  text-align: center;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 0.9em;
 }
 
 .questions-icon i {
@@ -631,18 +629,29 @@ header {
 }
 
 .question-card-answer-text {
-  display: none;
-
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: max-height 0.8s ease-in-out,
+    opacity 0.8s ease-in-out,
+    visibility 0s linear 0.8s;
 }
 
 .answer__displayed {
-  display: block;
+  opacity: 1;
+  max-height: 1000px;
+  visibility: visible;
+  transition: max-height 0.8s ease-in-out,
+    opacity 0.8s ease-in-out,
+    visibility 0s linear;
 }
 
 .question-and-plus-button-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2.5rem;
 }
 
 @media (max-width: 768px) {
