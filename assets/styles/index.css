@@ -18,6 +18,10 @@ section {
   margin: 15rem 0;
 }
 
+section:nth-of-type(1) {
+  margin-top: 0;
+}
+
 section:nth-last-of-type(1) {
   margin-bottom: 0;
 }
@@ -49,16 +53,15 @@ section:nth-last-of-type(1) {
 /* ! Header ----------------------------------------------------------------- */
 
 header {
-  padding: 3rem 0;
   font-size: 1.7rem;
   overflow: hidden;
+  background-color: #fefefe;
+  padding-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .header-logo-container {
-  background-image: url(../img/Bien-Casero-Color-Transparente-1.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  max-width: 80px;
 }
 
 .header-desktop-nav-bar {
@@ -71,6 +74,7 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
+  font-weight: 500;
 }
 
 .header-menu-links div {
@@ -100,7 +104,7 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .hero-banner-text {
@@ -109,7 +113,7 @@ header {
 }
 
 .hero-banner-logo {
-  width: 600px;
+  max-width: 600px;
 }
 
 .hero-banner-button,
