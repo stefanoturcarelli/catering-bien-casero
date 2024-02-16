@@ -491,8 +491,15 @@ header {
   gap: 10rem;
 }
 
-.customer-reviews-corner-image img {
-  height: 7rem;
+.customer-reviews-corner-image-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: right;
+  gap: 2rem;
+}
+
+.customer-reviews-corner-image-container img {
+  max-width: 350px;
 }
 
 .customer-reviews-container-cards {
