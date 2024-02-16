@@ -431,17 +431,14 @@ header {
 .about-us-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  gap: 2.5rem;
 }
 
 .about-us-text-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr) 2fr;
   justify-items: start;
   align-items: center;
-  gap: 2rem;
 }
 
 .about-us-subtitle {
@@ -453,12 +450,11 @@ header {
 .about-us-image {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
-  align-items: right;
+  justify-items: right;
 }
 
 .about-us-image img {
-  width: 350px;
+  max-width: 450px;
   border-radius: 50%;
 }
 
@@ -759,4 +755,3 @@ footer {
   color: #fff;
   padding: 3rem 0;
 }
-
