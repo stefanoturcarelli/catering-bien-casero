@@ -496,7 +496,6 @@ header {
 }
 
 .about-us-image img {
-  max-width: 450px;
   border-radius: 50%;
 }
 
@@ -721,14 +720,6 @@ header {
 .contact-us-elements {
   padding: 7rem 0;
 }
-
-.contact-info-boxes-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  padding: 0 16rem;
-}
-
 .contact-info-card {
   text-align: center;
 }
@@ -745,10 +736,10 @@ header {
 }
 
 .icon-social-media-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  padding: 3rem 46rem 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0;
 }
 
 .icon-social-media i {
