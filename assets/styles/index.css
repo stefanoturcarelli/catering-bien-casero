@@ -623,7 +623,7 @@ header {
   padding: 8rem 0;
 }
 
-.referral-program-elements > * {
+.referral-program-elements>* {
   padding: 2rem 0;
 }
 
@@ -710,21 +710,21 @@ header {
 
 /* ! Section Contact us */
 .contact-us-container {
-  background-image: url(../img/footer-background.png);
+  background-image: url(../img/call-to-action-background.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 5rem 0;
 }
 
 .contact-us-elements {
   padding: 7rem 0;
 }
+
 .contact-info-card {
   text-align: center;
 }
 
-.contact-info-card p:first-child {
+.contact-info-title {
   font-weight: 600;
   font-size: 1.2rem;
   color: var(--bien-casero-deep-red);
@@ -775,6 +775,21 @@ header {
   background: white;
   color: #e1306c;
   transition: 0.2s;
+}
+
+.fa-envelope,
+.fa-comment-dots,
+.fa-map {
+  font-size: 3rem;
+  color: var(--bien-casero-deep-red);
+}
+
+.contact-info-boxes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 1rem 17rem 0;
+  justify-items: center;
 }
 
 @media (max-width: 768px) {
