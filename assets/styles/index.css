@@ -52,7 +52,7 @@ section:nth-last-of-type(1) {
 
 /* ! Header ----------------------------------------------------------------- */
 
-header {
+.index-header {
   font-size: 1.7rem;
   overflow: hidden;
   background-color: #fefefe;
