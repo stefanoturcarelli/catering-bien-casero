@@ -1,0 +1,300 @@
+:root {
+    /* Bien Casero Pallete */
+    --bien-casero-deep-red: #8f0310;
+    --bien-casero-green: #038f82;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.three-options-pernil-button,
+.menu-sin-tacc-button,
+.catering-fingerfood-button {
+    color: #fff;
+    background-color: var(--bien-casero-deep-red);
+    padding: 1rem 2rem;
+    border-radius: 8rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: fit-content;
+}
+
+/* ! Header ----------------------------------------------------------------- */
+
+.services-header {
+    font-size: 1.7rem;
+    overflow: hidden;
+    background-color: transparent;
+    padding-top: 2rem;
+    position: absolute;
+}
+
+/* ! Section Hero Banner Services */
+
+.services-hero-banner {
+    background-image: url(../img/Pernil-servicios-herobanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80svh;
+    display: grid;
+}
+
+.services-hero-banner-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.services-hero-banner-title {
+    color: var(--bien-casero-deep-red);
+    font-size: 6rem;
+    font-weight: 600;
+    padding: 30rem 0 1.5rem 0;
+}
+
+.services-hero-banner-subtitle {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.services-hero-banner-text {
+    font-size: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .services-hero-banner {
+        background-position: right;
+        padding-top: 100px;
+        align-items: start;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+}
+
+@media (max-width: 425px) {
+    .services-hero-banner {
+        background-position: right;
+        padding-top: 100px;
+        align-items: start;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+}
+
+/* ! Section three options pernil */
+
+.three-options-pernil {
+    padding: 0 10rem 0;
+}
+
+.three-options-pernil-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.three-options-pernil-round-images {
+    border-radius: 50%;
+    height: 8rem;
+    margin-top: 3rem;
+}
+
+.prices-pernil-card {
+    background-color: #fff;
+    color: #000;
+    padding: 1.5rem 3.5rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.prices-pernil-card p {
+    text-align: center;
+}
+
+.three-options-pernil-bold-text {
+    font-weight: bold;
+}
+
+.three-options-pernil-cardtitle {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.three-options-pernil-text {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.three-options-pernil-button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+@media (max-width: 768px) {
+    .three-options-pernil-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .three-options-pernil-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ! Section Catering Fingerfood */
+
+.catering-fingerfood-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    background-color: #000;
+    padding: 3rem;
+}
+
+.catering-fingerfood-card {
+    background-color: #fff;
+    color: #000;
+    padding: 1.5rem 3.5rem 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.catering-fingerfood-title {
+    color: var(--bien-casero-deep-red);
+    text-align: center;
+}
+
+.catering-fingerfood-text {
+    text-align: center;
+}
+
+/* ! Section Menu sin TACC */
+
+.menu-sin-tacc-container {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.menu-sin-tacc-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+ul[role="list"] {
+    padding-left: 4rem;
+    font-size: 1.8rem;
+}
+
+li {
+    padding: 1rem 0;
+}
+
+.fa-circle-check {
+    color: var(--bien-casero-deep-red);
+}
+
+.section-sin-tacc-title {
+    color: var(--bien-casero-deep-red);
+    font-size: 3rem;
+}
+
+.menu-sin-tacc-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.menu-sin-tacc-image img {
+    border-radius: 50%;
+}
+
+.sin-tacc-logo {
+    height: 3rem;
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    .menu-sin-tacc-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-sin-tacc-text-content {
+        justify-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu-sin-tacc-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-sin-tacc-text-content {
+        justify-items: center;
+    }
+}
+
+
+/* ! Section Cajas Empresariales */
+
+.cajas-empresariales-container {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.cajas-empresariales-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5rem;
+}
+
+.cajas-empresariales-title {
+    color: var(--bien-casero-deep-red);
+    font-size: 3rem;
+}
+
+.cajas-empresariales-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.cajas-empresariales-image img {
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .cajas-empresariales-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cajas-empresariales-text-content {
+        justify-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .cajas-empresariales-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cajas-empresariales-text-content {
+        justify-items: center;
+    }
+}
