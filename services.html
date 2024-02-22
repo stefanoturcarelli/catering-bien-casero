@@ -29,6 +29,8 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="./assets/scripts/index.js" defer></script>
+	<script src="./assets/scripts/services.js" defer></script>
 
 
 	<!-- Font Awesome -->
@@ -110,7 +112,7 @@
 							<span class="three-options-pernil-bold-text">¡Consultanos el precio!</span>
 						</p>
 					</div>
-					<div class="prices-pernil-card">
+					<div class="prices-pernil-card prices-pernil-2nd-card">
 						<img class="three-options-pernil-round-images" src="./assets/img/20.png" alt=""></img>
 						<p class="three-options-pernil-cardtitle">Pernil para 20/30 personas</p>
 						<p>
@@ -150,114 +152,195 @@
 		</section>
 
 		<section class="catering-fingerfood">
-			<div class="container">
-				<h2 class="catering-fingerfood-title section-title">
-					Catering Fingerfood
-				</h2>
-				<p class="catering-fingerfood-text">
-					Ofrecemos deliciosos bocados fingerfood para que puedas 
-					disfrutar nuestro catering sin necesidad de sentarte a la 
-					mesa. Armalo como prefieras, acá te damos algunas opciones:
-				</p>
-				<div class="catering-fingerfood-container">
-					<div class="catering-fingerfood-card">
-						<img src="./assets/img/avocado-bacon.jpg" alt="">
-						<ul>
-							<li>
-								Bruschettas (jamón crudo y rúcula / 
-								Jamón cocido, queso y aceituna)
-							</li>
-							<li>
-								Empanadas de copetín (carne / pollo / 
-								calabaza y queso / acelga y ricota)
-							</li>
-							<li>
-								Chicken fingers
-							</li>
-							<li>
-								Brochette de pollo o capresse
-							</li>
-							<li>
-								Medialunitas de jamón y queso
-							</li>
-							<li>
-								Sándwich de miga
-							</li>
-							<li>
-								Tortillitas (papa / acelga)
-							</li>
-							<li>
-								Albondiguitas de carne
-							</li>
-							<li>
-								Pancitos saborizados
-							</li>
-							<li>
-								Chips de jamón y queso en pancito de zanahoria
-							</li>
-							<li>
-								Berenjenas en escabeche con pan casero
-							</li>
-						</ul>
+			<div class="catering-fingerfood-background-image-container">
+				<div class="container">
+					<h2 class="catering-fingerfood-title section-title">
+						Catering Fingerfood
+					</h2>
+					<div class="catering-fingerfood-description">
+						<p>
+							Ofrecemos deliciosos bocados fingerfood para que puedas
+							disfrutar nuestro catering sin necesidad de sentarte a la
+							mesa.
+						</p>
+						<p>
+							Armalo como prefieras, acá te damos algunas opciones:
+						</p>
 					</div>
-					<div class="catering-fingerfood-card">
-						<img src="./assets/img/avocado-bacon.jpg" alt="">
-						<ul>
-							<li>
-								Sándwich de carne
-							</li>
-							<li>
-								Sándwich de pollo, crema y verdeo
-							</li>
-							<li>
-								Sándwich de matambre
-							</li>
-							<li>
-								Sándwich de chorizo a la pomarola
-							</li>
-							<li>
-								Sandwich en pan bao
-							</li>
-							<li>
-								Sándwich de bondiola
-							</li>
-							<li>
-								Pernil de cerdo
-							</li>
-							<li>
-								Empanadas de carne, pollo, verduras, 
-								jamón y queso y capresse
-							</li>
-							<li>
-								Tacos de carne, pollo, cerdo y vegetarianos
-							</li>
-						</ul>
+					<div class="catering-fingerfood-container">
+						<div class="catering-fingerfood-card">
+							<div class="carousel" data-carousel>
+								<i class="fa-solid fa-arrow-left carousel-button prev" data-carousel-button="prev"></i>
+								<i class="fa-solid fa-arrow-right carousel-button next" data-carousel-button="next"></i>
+								<ul data-slides>
+									<li class="slide" data-active>
+										<img src="./assets/img/avocado-bacon.jpg" alt="avocado-bacon-toast">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/pinchos-pollo2.JPG" alt="chicken-nuggets">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/tortillitas.JPG" alt="potatoes">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/chips-zanahoria2.JPG" alt="carrot-sandwiches">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/hummus.png" alt="hummus-toast">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/tomatoes-cheese-herbs.jpg" alt="capresse-brochettes">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/toasts.jpg" alt="bruschettas">
+									</li>
+								</ul>
+							</div>
+							<p class="catering-fingerfood-card-title">
+								Entradas
+							</p>
+							<ul class="catering-fingerfood-lists">
+								<li>
+									<i class="fa-solid fa-circle-check"></i>
+									Bruschettas (jamón crudo y rúcula /
+									Jamón cocido, queso y aceituna)
+								</li>
+								<li>
+									<img class="sin-tacc-logo" src="./assets/img/sin-tacc-logo.png" alt="sin-tacc">
+									Empanadas de copetín (carne / pollo /
+									calabaza y queso / acelga y ricota)
+								</li>
+								<li>
+									Chicken fingers
+								</li>
+								<li>
+									Brochette de pollo o capresse
+								</li>
+								<li>
+									Medialunitas de jamón y queso
+								</li>
+								<li>
+									Sándwich de miga
+								</li>
+								<li>
+									Tortillitas (papa / acelga)
+								</li>
+								<li>
+									Albondiguitas de carne
+								</li>
+								<li>
+									Pancitos saborizados
+								</li>
+								<li>
+									Chips de jamón y queso en pancito de zanahoria
+								</li>
+								<li>
+									Berenjenas en escabeche con pan casero
+								</li>
+							</ul>
+						</div>
+						<div class="catering-fingerfood-card">
+							<div class="carousel" data-carousel>
+								<i class="fa-solid fa-arrow-left carousel-button prev" data-carousel-button="prev"></i>
+								<i class="fa-solid fa-arrow-right carousel-button next" data-carousel-button="next"></i>
+								<ul data-slides>
+									<li class="slide" data-active>
+										<img src="./assets/img/sandwich-pollo.JPG" alt="hummus-toast">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/sandwich-carne2.JPG" alt="carrot-sandwiches">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/Pernil-3.png" alt="bruschettas">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/sandwich-carne-pollo.JPG" alt="chicken-nuggets">
+									</li>
+								</ul>
+							</div>
+							<p class="catering-fingerfood-card-title">
+								Plato Principal
+							</p>
+							<ul class="catering-fingerfood-lists">
+								<li>
+									Sándwich de carne
+								</li>
+								<li>
+									Sándwich de pollo, crema y verdeo
+								</li>
+								<li>
+									Sándwich de matambre
+								</li>
+								<li>
+									Sándwich de chorizo a la pomarola
+								</li>
+								<li>
+									Sandwich en pan bao
+								</li>
+								<li>
+									Sándwich de bondiola
+								</li>
+								<li>
+									Pernil de cerdo
+								</li>
+								<li>
+									Empanadas de carne, pollo, verduras,
+									jamón y queso y capresse
+								</li>
+								<li>
+									Tacos de carne, pollo, cerdo y vegetarianos
+								</li>
+							</ul>
+						</div>
+						<div class="catering-fingerfood-card">
+							<div class="carousel" data-carousel>
+								<i class="fa-solid fa-arrow-left carousel-button prev" data-carousel-button="prev"></i>
+								<i class="fa-solid fa-arrow-right carousel-button next" data-carousel-button="next"></i>
+								<ul data-slides>
+									<li class="slide" data-active>
+										<img src="./assets/img/desserts.jpg" alt="avocado-bacon-toast">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/desserts-2.jpg" alt="chicken-nuggets">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/desserts-5.jpg" alt="carrot-sandwiches">
+									</li>
+									<li class="slide">
+										<img src="./assets/img/desserts-4.jpg" alt="carrot-sandwiches">
+									</li>
+								</ul>
+							</div>
+							<p class="catering-fingerfood-card-title">
+								Postres en vasitos
+							</p>
+							<p class="catering-fingerfood-card-subtitle">
+								Shots dulces de 100cc
+							</p>
+							<ul class="catering-fingerfood-lists">
+								<li>
+									Chocotorta
+								</li>
+								<li>
+									Cheesecake
+								</li>
+								<li>
+									Super Dulce de Leche
+								</li>
+								<li>
+									Postre Oreo
+								</li>
+								<li>
+									Lemon Pie
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="catering-fingerfood-card">
-						<img src="./assets/img/avocado-bacon.jpg" alt="">
-						<ul>
-							<li>
-								Chocotorta
-							</li>
-							<li>
-								Cheesecake
-							</li>
-							<li>
-								Super Dulce de Leche
-							</li>
-							<li>
-								Postre Oreo
-							</li>
-							<li>
-								Lemon Pie
-							</li>
-						</ul>
+					<div class="catering-fingerfood-button-container">
+						<a href="contact.html" class="catering-fingerfood-button">
+							AGENDÁ AHORA
+						</a>
 					</div>
-				</div>
-				<div class="three-options-pernil-button-container">
-					<a href="contact.html" class="catering-fingerfood-button">
-						AGENDÁ AHORA
-					</a>
 				</div>
 			</div>
 		</section>
@@ -304,32 +387,34 @@
 		</section>
 
 		<section class="cajas-empresariales">
-			<div class="container">
-				<div class="cajas-empresariales-container">
-					<div class="cajas-empresariales-image">
-						<img src="./assets/img/business-lunch-box.png" alt="business-lunch-box-image">
-					</div>
-					<div class="cajas-empresariales-text-content">
-						<h2 class="cajas-empresariales-title">
-							Cajas empresariales
-						</h2>
-						<p>
-							Para este nuevo contexto tenemos esta opción
-							imperdible. Podés hacer un brindis empresarial,
-							un after office o cualquier tipo de evento laboral
-							enviando a tus empleados una Box de Bien Casero
-							a sus casas.
-						</p>
-						<ul role="list">
-							<li>
-								<i class="fa-solid fa-circle-check"></i>
-								Contenido: menú finger food para dos personas
-							</li>
-							<li>
-								<i class="fa-solid fa-circle-check"></i>
-								Podés personalizarlo como todos nuestros menús
-							</li>
-						</ul>
+			<div class="cajas-empresariales-background-image-container">
+				<div class="container">
+					<div class="cajas-empresariales-container">
+						<div class="cajas-empresariales-image">
+							<img src="./assets/img/lunch-box.jpg" alt="business-lunch-box-image">
+						</div>
+						<div class="cajas-empresariales-text-content">
+							<h2 class="cajas-empresariales-title">
+								Cajas empresariales
+							</h2>
+							<p>
+								Para este nuevo contexto tenemos esta opción
+								imperdible. Podés hacer un brindis empresarial,
+								un after office o cualquier tipo de evento laboral
+								enviando a tus empleados una Box de Bien Casero
+								a sus casas.
+							</p>
+							<ul role="list">
+								<li>
+									<i class="fa-solid fa-circle-check"></i>
+									Contenido: menú finger food para dos personas
+								</li>
+								<li>
+									<i class="fa-solid fa-circle-check"></i>
+									Podés personalizarlo como todos nuestros menús
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -502,7 +587,7 @@
 	<footer>
 		<div class="container">
 			<div class="footer-container">
-				<p>
+				<p class="footer-container-text">
 					&copy;
 					Diseñado por
 					<a href="https://ileanaecheverria.com/" target="_blank" rel="noopener noreferrer">
