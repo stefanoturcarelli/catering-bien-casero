@@ -20,6 +20,10 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="./assets/styles/index.css" media="all">
+	<link rel="stylesheet" href="./assets/styles/reset.css" media="all">
+	<link rel="stylesheet" href="./assets/styles/about.css" media="all">
+	<script src="./assets/scripts/index.js" defer></script>
+
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -33,29 +37,368 @@
 </head>
 
 <body>
-	<header>
-		<!-- WhatsApp Button -->
-		<a href="https://wa.me/5491130777777" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
-			<i class="fab fa-whatsapp"></i>
-		</a>
+	<header class="index-header">
 		<div class="container">
-			<div class="container-flexbox">
-				<div class="logo">
-					<a href="./index.html">
-						<img src="./assets/img/favicon.png" alt="Catering Bien Casero Logo">
-					</a>
+			<div class="header-desktop-nav-bar">
+				<!-- Logo -->
+				<div class="header-logo-container">
+					<img src="./assets/img/Bien-Casero-Color-Transparente-1.png" />
 				</div>
-				<!-- Desktop Nav -->
-				<nav class="desktop-nav">
-					<a href="index.html">Home</a>
-					<a href="./services.html">Services</a>
-					<a href="./about.html">About us</a>
-					<a href="./contact.html">Contact us</a>
-					<a href="./book.html">Book now</a>
-				</nav>
+				<!-- Desktop Nav Bar -->
+				<div class="header-menu-links">
+					<div>
+						<a href="index.html">
+							<p>Inicio</p>
+						</a>
+					</div>
+					<div>
+						<a href="services.html">
+							<p>Servicios</p>
+						</a>
+					</div>
+					<div>
+						<a href="about.html">
+							<p>Nosotros</p>
+						</a>
+					</div>
+					<div>
+						<a href="contact.html">
+							<p>Presupuestos y contacto</p>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
+	<main>
+		<!-- WhatsApp Button -->
+		<a href="https://wa.me/5491160328777" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+			<i class="fab fa-whatsapp"></i>
+		</a>
+
+		<section class="about-hero-banner">
+			<div class="container">
+				<div class="about-hero-banner-container">
+					<p class="about-hero-banner-title">Acerca de nosotros</p>
+					<p class="about-hero-banner-subtitle">LO QUE HACEMOS</p>
+					<a href="contact.html" class="about-us-hero-banner-button">
+						¿Hablamos?
+					</a>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="our-chef">
+			<div class="container">
+				<div class="our-chef-container">
+					<div class="our-chef-text-content">
+						<h2 class="section-our-chef-title">
+							Nuestro chef
+						</h2>
+						<p class="section-our-chef-subtitle">
+							Te presentamos a Joni
+						</p>
+						<p>
+							Todo comenzó como un hobbie, cocinando para mi
+							familia y amigos. Hice varios cursos y también
+							estudié para Chef.
+						</p>
+						<p>
+							Hace más de tres años, Catering Bien Casero es mi
+							forma de demostrarle a todos lo mucho que amo
+							cocinar y llevar a sus casas comida rica, abundante,
+							casera y de calidad.
+						</p>
+					</div>
+					<div class="our-chef-image">
+						<img src="./assets/img/jonatan-moreira.png" alt="chef-image">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="chef-assistant">
+			<div class="chef-assistant-background-image-container">
+				<div class="container">
+					<div class="chef-assistant-container">
+						<div class="chef-assistant-image">
+							<img src="./assets/img/noe.jpg" alt="chef-assistant-image">
+						</div>
+						<div class="chef-assistant-text-content">
+							<h2 class="chef-assistant-title">
+								Noe
+							</h2>
+							<p class="section-chef-assistant-subtitle">
+								La mano derecha del chef
+							</p>
+							<p>
+								¡Hola! Mi nombre es Noelia, y estoy orgullosa
+								de decir que soy la que impulsó a Joni a
+								comenzar este emprendimiento.
+							</p>
+							<p>
+								Actualmente llevo adelante las redes sociales y
+								la coordinación con los clientes, así que si te
+								contactas con nosotros seguramente sea yo la
+								que esté del otro lado, ¡mucho gusto!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="our-vision">
+			<div class="container">
+				<div class="our-vision-container">
+					<div class="our-vision-elements">
+						<h2 class="our-vision-title section-title">
+							Nuestra visión
+						</h2>
+						<p class="our-vision-text">
+							Bien Casero es sinónimo de calidad. Disfrutamos
+							mucho de la comida, y sabemos lo que representa
+							poder llegar a tu mesa. Un cumpleaños, un encuentro
+							con amigos, un domingo en familia, una reunión
+							laboral. Un momento de disfrute con los tuyos.
+							Sabemos lo importante que es, por eso cuidamos
+							cada detalle.
+						</p>
+						<div>
+							<a href="contact.html" class="our-vision-button">
+								CONTACTANOS
+							</a>
+						</div>
+					</div>
+				</div>
+		</section>
+
+
+
+		<section class="our-social-media">
+			<div class="container">
+				<div class="our-social-media-container">
+					<h2 class="our-social-media-title section-title">
+						Nuestras redes sociales
+					</h2>
+					<div class="icon-social-media-container">
+						<div class="icon-social-media">
+							<a href="https://www.facebook.com/cateringbiencasero">
+								<i class="fab fa-facebook-f icon"></i>
+							</a>
+						</div>
+						<div class="icon-social-media">
+							<a href="https://www.instagram.com/catering_bien_casero/">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="videos">
+			<div class="videos-background-image-container">
+				<div class="container">
+					<h2 class="videos-title">
+						¿Todavía no te tentaste? ¡Mirá estos videos!
+					</h2>
+					<div class="videos-container">
+						<video width=auto height="240" controls>
+							<source src="./assets/video/bruschettas-video.mp4" type="video/mp4">
+						</video>
+						<video width=auto height="240" controls>
+							<source src="./assets/video/pernil-video.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="frecuent-questions">
+			<div class="container">
+				<div class="frecuent-questions-container">
+					<h2 class="frecuent-questions-title section-title">
+						Preguntas frecuentes
+					</h2>
+					<div class="frecuent-questions-boxes-container">
+						<div class="col-1">
+							<div class="question-card">
+								<div class="question-and-plus-button-container">
+									<p class="question-card-title">
+										¿CÓMO HAGO MI PEDIDO?
+									</p>
+									<a class="questions-icon">
+										<i class="fa-solid fa-circle-plus"></i>
+									</a>
+								</div>
+								<div class="question-card-answer-container">
+									<p class="question-card-answer-text">
+										Contactanos por redes sociales, whatsapp o rellena el
+										formulario de contacto. Una vez que coordinamos, te pediremos
+										una seña del 50% para reservar tu pedido. El 50% restante se
+										puede abonar el día de la entrega.
+									</p>
+								</div>
+							</div>
+							<div class="question-card">
+								<div class="question-and-plus-button-container">
+									<p class="question-card-title">
+										¿CON CUÁNTO TIEMPO DE ANTICIPACIÓN DEBO HACER MI PEDIDO?
+									</p>
+									<a class="questions-icon">
+										<i class="fa-solid fa-circle-plus"></i>
+									</a>
+								</div>
+								<div class="question-card-answer-container">
+									<p class="question-card-answer-text">
+										Los perniles con 72 hs de anticipación es suficiente.
+										Los caterings personalizados al menos con una semana de
+										anticipación.
+									</p>
+								</div>
+							</div>
+							<div class="question-card">
+								<div class="question-and-plus-button-container">
+									<p class="question-card-title">
+										¿CÓMO PUEDO ABONAR?
+									</p>
+									<a class="questions-icon">
+										<i class="fa-solid fa-circle-plus"></i>
+									</a>
+								</div>
+								<div class="question-card-answer-container">
+									<p class="question-card-answer-text">
+										Aceptamos efectivo, transferencia bancaria y Mercado Pago.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-2">
+							<div class="question-card">
+								<div class="question-and-plus-button-container">
+									<p class="question-card-title">
+										¿CÓMO FUNCIONA EL PROGRAMA DE REFERIDOS?
+									</p>
+									<a class="questions-icon">
+										<i class="fa-solid fa-circle-plus"></i>
+									</a>
+								</div>
+								<div class="question-card-answer-container">
+									<p class="question-card-answer-text">
+										Por cada amigo que recomiendes y nos contrate, te daremos
+										un cupón con un 10% de descuento para que lo utilices en
+										tu próximo pedido con nosotros. Es válido por dos meses
+										una vez obtenido el cupón.
+									</p>
+								</div>
+							</div>
+							<div class="question-card">
+								<div class="question-and-plus-button-container">
+									<p class="question-card-title">
+										¿CUÁL ES EL COSTO DE ENVÍO?
+									</p>
+									<a class="questions-icon">
+										<i class="fa-solid fa-circle-plus"></i>
+									</a>
+								</div>
+								<div class="question-card-answer-container">
+									<p class="question-card-answer-text">
+										Ofrecemos envío gratis en las zonas de Gregorio de
+										Laferrere, Isidro Casanova, Rafael Castillo y San Justo.
+										Para otras zonas se puede coordinar el precio del envío
+										por whatsapp.
+									</p>
+								</div>
+							</div>
+							<div class="question-card">
+								<div class="question-and-plus-button-container">
+									<p class="question-card-title">
+										¿HACEN FACTURA?
+									</p>
+									<a class="questions-icon">
+										<i class="fa-solid fa-circle-plus"></i>
+									</a>
+								</div>
+								<div class="question-card-answer-container">
+									<p class="question-card-answer-text">
+										¡Si, por supuesto! Emitimos factura C.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+		</section>
+
+		<section class="contact-us">
+			<div class="contact-us-container">
+				<div class="contact-us-elements">
+					<div class="contact-us-text">
+						<h2 class="section-title">
+							Contactanos
+						</h2>
+						<p>¡Te estamos esperando!</p>
+					</div>
+					<div class="icon-social-media-container">
+						<div class="icon-social-media">
+							<a href="https://www.facebook.com/cateringbiencasero">
+								<i class="fab fa-facebook-f icon"></i>
+							</a>
+						</div>
+						<div class="icon-social-media">
+							<a href="https://www.instagram.com/catering_bien_casero/">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+					<div class="contact-info-boxes-container">
+						<div class="contact-info-card">
+							<i class="fa-regular fa-envelope"></i>
+							<p class="contact-info-title">CORREO ELECTRÓNICO</p>
+							<p>
+								info@cateringbiencasero.com
+							</p>
+						</div>
+						<div class="contact-info-card">
+							<i class="fa-regular fa-comment-dots"></i>
+							<p class="contact-info-title">LLAMADAS O WHATSAPP</p>
+							<p>
+								(011) 6032-8777
+								L-S 10 a 20hs
+							</p>
+						</div>
+						<div class="contact-info-card">
+							<i class="fa-regular fa-map"></i>
+							<p class="contact-info-title">UBICANOS</p>
+							<p>
+								Zona Oeste, Buenos Aires
+							</p>
+						</div>
+					</div>
+				</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="footer-container">
+				<p class="footer-container-text">
+					&copy;
+					Diseñado por
+					<a href="https://ileanaecheverria.com/" target="_blank" rel="noopener noreferrer">
+						Ileana Echeverria
+					</a>
+					y
+					<a href="https://www.stefanoturcarelli.com/" target="_blank" rel="noopener noreferrer">
+						Stefano Turcarelli
+				</p>
+			</div>
+		</div>
+	</footer>
+
 
 </body>
 
