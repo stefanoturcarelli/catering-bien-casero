@@ -1,0 +1,250 @@
+:root {
+    /* Bien Casero Pallete */
+    --bien-casero-deep-red: #8f0310;
+    --bien-casero-green: #038f82;
+}
+
+.about-us-hero-banner-button {
+    color: #fff;
+    background-color: var(--bien-casero-deep-red);
+    padding: 1rem 2rem;
+    border-radius: 8rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: fit-content;
+}
+
+.our-vision-button {
+    color: var(--bien-casero-deep-red);
+    font-weight: 600;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    width: fit-content;
+}
+
+/* ! Section Hero Banner Services */
+
+
+.about-hero-banner {
+    background-image: url(../img/about-us-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75svh;
+    display: grid;
+    margin-bottom: 0;
+}
+
+.about-hero-banner-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
+.about-hero-banner-title {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.about-hero-banner-subtitle {
+    font-size: 2.5rem;
+    padding: 2.5rem 0;
+}
+
+
+@media (max-width: 768px) {
+    .about-hero-banner {
+        background-position: right;
+        padding-top: 100px;
+        align-items: start;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+}
+
+@media (max-width: 425px) {
+    .about-hero-banner {
+        background-position: right;
+        padding-top: 100px;
+        align-items: start;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+}
+
+/* ! Section Our Chef */
+
+.our-chef-container {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+.our-chef-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 8rem;
+}
+
+.section-our-chef-title {
+    font-size: 3.5rem;
+}
+
+.section-our-chef-subtitle {
+    color: var(--bien-casero-deep-red);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.our-chef-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.our-chef-image img {
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .our-chef-container {
+        grid-template-columns: 1fr;
+    }
+
+    .our-chef-text-content {
+        justify-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .our-chef-container {
+        grid-template-columns: 1fr;
+    }
+
+    .our-chef-text-content {
+        justify-items: center;
+    }
+}
+
+
+/* ! Section Chef Assistant */
+
+.chef-assistant-container {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    padding-top: 12rem;
+}
+
+.chef-assistant-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 8rem;
+}
+
+.chef-assistant-title {
+    font-size: 3.5rem;
+}
+
+.section-chef-assistant-subtitle {
+    color: var(--bien-casero-deep-red);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.chef-assistant-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.chef-assistant-image img {
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .chef-assistant-container {
+        grid-template-columns: 1fr;
+    }
+
+    .chef-assistant-text-content {
+        justify-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .chef-assistant-container {
+        grid-template-columns: 1fr;
+    }
+
+    .chef-assistant-text-content {
+        justify-items: center;
+    }
+}
+
+/* ! Section Our Vision */
+
+.our-vision-container {
+    background-image: url(../img/our-vision-background.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.our-vision-elements {
+    text-align: center;
+    padding: 15rem;
+    color: #fff;
+}
+
+.our-vision-elements>* {
+    padding: 2rem 0;
+}
+
+.our-vision-title {
+    padding-top: 12rem;
+}
+
+/* ! Section Our Social Media */
+
+.our-social-media-title {
+    color: var(--bien-casero-deep-red);
+    text-align: center;
+}
+
+/* ! Section Videos */
+
+.videos-background-image-container {
+    background-image: url(../img/Background-cajas-empresariales.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100svh;
+}
+
+.videos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding-top: 5rem;
+}
+
+.videos-title {
+    color: var(--bien-casero-deep-red);
+    font-size: 3rem;
+    padding-top: 12rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .videos-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .videos-container {
+        grid-template-columns: 1fr;
+    }
+}
