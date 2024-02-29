@@ -1,0 +1,94 @@
+:root {
+    /* Bien Casero Pallete */
+    --bien-casero-deep-red: #8f0310;
+    --bien-casero-green: #038f82;
+}
+
+/* ! Section Contact Info */
+
+.contact-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-info-inline-text {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info-inline-social-media {
+    display: flex;
+    align-items: center;
+}
+
+.contact-us-info-title {
+    font-size: 4rem;
+}
+
+.contact-us-info-subtitle {
+    font-weight: 600;
+}
+
+.fa-laptop {
+    font-size: 3rem;
+    color: var(--bien-casero-deep-red);
+}
+
+.contact-info-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.contact-info-form img {
+    height: 22rem;
+    border-radius: 50%;
+}
+
+
+/* ! Section Meet Our Chef */
+
+.meet-our-chef {
+    background-image: url(../img/Background-footer-contact-us.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.meet-our-chef-container {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    padding: 12rem 0 5rem;
+}
+
+.meet-our-chef-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.meet-our-chef-subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contact-us-our-chef-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.contact-us-our-chef-image img {
+    height: 22rem;
+    border-radius: 50%;
+}
+
+
+
+/* ! Footer */
+.contact-us-footer {
+    background-color: #494949;
+    color: #fff;
+    padding: 3rem 0;
+}
