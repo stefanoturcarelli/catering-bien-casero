@@ -6,43 +6,25 @@
 
 /* ! Section Contact Info */
 
-.contact-info-container {
+.contact-info {
+    background-image: url(../img/background-contact-us.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100svh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
-.contact-info-inline-text {
-    display: flex;
-    align-items: center;
-}
 
-.contact-info-inline-social-media {
-    display: flex;
-    align-items: center;
-}
-
-.contact-us-info-title {
+.contact-info-title {
+    text-align: center;
     font-size: 4rem;
 }
 
-.contact-us-info-subtitle {
+.contact-info-subtitle {
+    text-align: center;
+    font-size: 2rem;
     font-weight: 600;
-}
-
-.fa-laptop {
-    font-size: 3rem;
-    color: var(--bien-casero-deep-red);
-}
-
-.contact-info-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
-
-.contact-info-form img {
-    height: 22rem;
-    border-radius: 50%;
 }
 
 
