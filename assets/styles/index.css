@@ -31,6 +31,7 @@ section:nth-last-of-type(1) {
 }
 
 /* ! Whatsapp button -------------------------------------------------------- */
+
 .whatsapp-button {
   position: fixed;
   width: 60px;
@@ -57,7 +58,7 @@ section:nth-last-of-type(1) {
   overflow: hidden;
   background-color: #fefefe;
   padding-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .header-logo-container {
@@ -87,7 +88,65 @@ section:nth-last-of-type(1) {
   color: var(--bien-casero-deep-red);
 }
 
-/* ! Section Hero Banner */
+@media screen and (max-width: 768px) {
+  .index-header {
+    font-size: 1.5rem;
+  }
+
+  .header-menu-links div {
+    padding: 0 1rem;
+  }
+
+  .header-desktop-nav-bar {
+    display: none;
+  }
+
+  .index-header {
+    font-size: 1.5rem;
+  }
+
+  .mobile-nav-bar-toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+  color: var(--bien-casero-deep-red);
+
+  }
+
+  .mobile-nav-bar-menu__show {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #fefefe;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 100;
+    border-radius: 0 0 0 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  .mobile-nav-bar-menu__hide {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .index-header {
+    font-size: 1.3rem;
+  }
+
+  .header-menu-links div {
+    padding: 0 0.5rem;
+  }
+}
+
+/* ! Section Hero Banner ---------------------------------------------------- */
 
 .hero-banner {
   background-image: url(../img/Hero-banner-background-2.png);
@@ -156,7 +215,7 @@ section:nth-last-of-type(1) {
   }
 }
 
-/* ! Section Our Offers Conoce nuestras propuestas */
+/*  ! Section Our Offers Conoce nuestras propuestas ------------------------- */
 
 .our-offers-container {
   display: grid;
@@ -285,7 +344,7 @@ section:nth-last-of-type(1) {
   }
 }
 
-/* ! Section Three Cards */
+/* ! Section Three Cards ---------------------------------------------------- */
 
 .three-cards-container {
   height: 60svh;
@@ -372,39 +431,27 @@ section:nth-last-of-type(1) {
   color: var(--bien-casero-deep-red);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .three-cards-container {
     grid-template-columns: 1fr;
-  }
-
-  .three-cards-1 {
-    height: 100%;
-  }
-
-  .three-cards-2 {
-    height: 100%;
-  }
-
-  .three-cards-3 {
-    height: 100%;
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 480px) {
+.three-cards {
+  padding: 10rem 0;
+}
+}
+
   .three-cards-container {
     grid-template-columns: 1fr;
+    padding-top: 3rem;
   }
 
-  .three-cards-1 {
-    height: 100%;
-  }
-
-  .three-cards-2 {
-    height: 100%;
-  }
-
+  .three-cards-1,
+  .three-cards-2,
   .three-cards-3 {
-    height: 100%;
+    padding: 10rem 0;
   }
 }
 
@@ -467,7 +514,7 @@ section:nth-last-of-type(1) {
   }
 }
 
-/* ! Section About Us */
+/* ! Section About Us ------------------------------------------------------- */
 
 .about-us-container {
   display: grid;
@@ -491,13 +538,34 @@ section:nth-last-of-type(1) {
   border-radius: 50%;
 }
 
+/* About Us media queries */
+
 @media (max-width: 768px) {
+  .about-us {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  }
+
   .about-us-container {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 
   .about-us-text-content {
-    justify-items: center;
+    gap: 3rem;
+  }
+
+  .about-us-button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
   }
 }
 
@@ -505,13 +573,8 @@ section:nth-last-of-type(1) {
   .about-us-container {
     grid-template-columns: 1fr;
   }
-
-  .about-us-text-content {
-    justify-items: center;
-  }
 }
-
-/* ! Section Customer Reviews */
+/* ! Section Customer Reviews ----------------------------------------------- */
 
 .customer-reviews-container {
   max-width: 1200px;
@@ -598,7 +661,7 @@ section:nth-last-of-type(1) {
   }
 }
 
-/* ! Section Referral Program */
+/* ! Section Referral Program ----------------------------------------------- */
 
 .referral-program-container {
   background-image: url(../img/ReferidosWithBackground.png);
@@ -616,7 +679,7 @@ section:nth-last-of-type(1) {
   padding: 8rem 0;
 }
 
-.referral-program-elements>* {
+.referral-program-elements > * {
   padding: 2rem 0;
 }
 
@@ -624,7 +687,26 @@ section:nth-last-of-type(1) {
   font-size: 2rem;
 }
 
-/* ! Section Frecuent questions */
+/* Referral section media queries */
+
+@media (max-width: 768px) {
+  .referral-program-container {
+    background-position: right;
+    background-size: cover;
+  }
+
+  .referral-program-text {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .referral-program-container {
+    background-position: right;
+  }
+}
+
+/* ! Section Frequent questions --------------------------------------------- */
 
 .col-1,
 .col-2 {
@@ -702,7 +784,8 @@ section:nth-last-of-type(1) {
   }
 }
 
-/* ! Section Contact us */
+/* ! Section Contact us ----------------------------------------------------- */
+
 .contact-us-container {
   background-image: url(../img/call-to-action-background.png);
   background-position: center;
@@ -786,9 +869,13 @@ section:nth-last-of-type(1) {
   justify-items: center;
 }
 
+/* Contact Us Section media queries */
+
 @media (max-width: 768px) {
   .contact-info-boxes-container {
     grid-template-columns: 1fr;
+    padding: 1rem 0;
+    gap: 2rem;
   }
 }
 
@@ -798,7 +885,7 @@ section:nth-last-of-type(1) {
   }
 }
 
-/* ! Footer */
+/* ! Footer ----------------------------------------------------------------- */
 footer {
   background-color: var(--bien-casero-deep-red);
   color: #fff;
@@ -807,4 +894,27 @@ footer {
 
 .footer-container-text {
   font-size: 1.5rem;
+}
+
+.footer-container-text a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-container-text a:hover {
+  color: #f8f8f8;
+}
+
+/* Footer media queries */
+
+@media (max-width: 768px) {
+  .footer-container-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-container-text {
+    text-align: center;
+  }
 }
