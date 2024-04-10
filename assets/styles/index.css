@@ -14,22 +14,6 @@
   --bien-casero-green: #038f82;
 }
 
-section {
-  margin: 15rem 0;
-}
-
-section:nth-of-type(1) {
-  margin-top: 0;
-}
-
-section:nth-last-of-type(1) {
-  margin-bottom: 0;
-}
-
-.section-title {
-  font-size: 3rem;
-}
-
 /* ! Whatsapp button -------------------------------------------------------- */
 .whatsapp-button {
   position: fixed;
@@ -52,16 +36,8 @@ section:nth-last-of-type(1) {
 
 /* ! Header ----------------------------------------------------------------- */
 
-.index-header {
-  font-size: 1.7rem;
-  overflow: hidden;
-  background-color: #fefefe;
-  padding-top: 2rem;
-  margin-bottom: 5rem;
-}
-
 .header-logo-container {
-  max-width: 80px;
+  max-width: 7rem;
 }
 
 .header-desktop-nav-bar {
@@ -87,7 +63,17 @@ section:nth-last-of-type(1) {
   color: var(--bien-casero-deep-red);
 }
 
-/* ! Section Hero Banner */
+@media screen and (max-width: 768px) {
+  .header-menu-links {
+    display: none;
+  }
+
+  .header-logo-container {
+    max-width: 5rem;
+  }
+}
+
+/* ! Section Hero Banner -----------------------------------------------------*/
 
 .hero-banner {
   background-image: url(../img/Hero-banner-background-2.png);
@@ -113,7 +99,7 @@ section:nth-last-of-type(1) {
 }
 
 .hero-banner-logo {
-  max-width: 600px;
+  max-width: 60rem;
 }
 
 .hero-banner-button,
@@ -126,6 +112,7 @@ section:nth-last-of-type(1) {
   padding: 1rem 2rem;
   border-radius: 8rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: fit-content;
 }
 
 @media (max-width: 768px) {
@@ -156,7 +143,7 @@ section:nth-last-of-type(1) {
   }
 }
 
-/* ! Section Our Offers Conoce nuestras propuestas */
+/* ! Section Our Offers Conoce nuestras propuestas ---------------------------*/
 
 .our-offers-container {
   display: grid;
@@ -194,7 +181,6 @@ section:nth-last-of-type(1) {
 }
 
 .our-offers-container-2 img {
-  width: 70px;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 50%;
 }
@@ -291,7 +277,6 @@ section:nth-last-of-type(1) {
   height: 60svh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: stretch;
   gap: 4rem;
 }
 
@@ -376,36 +361,6 @@ section:nth-last-of-type(1) {
   .three-cards-container {
     grid-template-columns: 1fr;
   }
-
-  .three-cards-1 {
-    height: 100%;
-  }
-
-  .three-cards-2 {
-    height: 100%;
-  }
-
-  .three-cards-3 {
-    height: 100%;
-  }
-}
-
-@media (max-width: 425px) {
-  .three-cards-container {
-    grid-template-columns: 1fr;
-  }
-
-  .three-cards-1 {
-    height: 100%;
-  }
-
-  .three-cards-2 {
-    height: 100%;
-  }
-
-  .three-cards-3 {
-    height: 100%;
-  }
 }
 
 /* ! Section Gluten Free Vegetarian and Business */
@@ -415,26 +370,26 @@ section:nth-last-of-type(1) {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90svh;
+  padding: 25rem 0;
 }
 
 .gluten-free-veggie-business-container-title {
   color: #fff;
-  padding-top: 13rem;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.gluten-free-veggie-business-container {
+.gluten-free-veggie-business-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  padding-top: 6rem;
+  gap: 2rem;
 }
 
 .gluten-free-veggie-business-round-images {
   border-radius: 50%;
-  height: 12rem;
-  position: relative;
-  margin-top: -5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 15rem;
 }
 
 .gluten-free-card,
@@ -478,7 +433,6 @@ section:nth-last-of-type(1) {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-right: 3rem;
 }
 
 .about-us-subtitle {
@@ -513,13 +467,6 @@ section:nth-last-of-type(1) {
 
 /* ! Section Customer Reviews */
 
-.customer-reviews-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 1rem;
-  gap: 10rem;
-}
-
 .customer-reviews-corner-image-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -528,14 +475,13 @@ section:nth-last-of-type(1) {
 }
 
 .customer-reviews-corner-image-container img {
-  max-width: 350px;
+  max-width: 35rem;
 }
 
 .customer-reviews-container-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  padding-top: 1rem;
 }
 
 .review-card {
@@ -616,7 +562,7 @@ section:nth-last-of-type(1) {
   padding: 8rem 0;
 }
 
-.referral-program-elements>* {
+.referral-program-elements > * {
   padding: 2rem 0;
 }
 
@@ -643,7 +589,6 @@ section:nth-last-of-type(1) {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   gap: 1.5rem;
-  padding-top: 5rem;
 }
 
 .question-card {
