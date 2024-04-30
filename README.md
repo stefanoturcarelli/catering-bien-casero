@@ -8,7 +8,7 @@ This repository contains the code for the Catering Bien Casero website, a platfo
 
 ## Usage 🌐
 
-You can access the live website hosted on GitHub Pages: [Catering Bien Casero](https://stefanoturcarelli.github.io/catering-bien-casero/)
+You can access the live website hosted on GitHub Pages: [Catering Bien Casero](https://cateringbiencasero.com)
 
 ## Considerations
 
