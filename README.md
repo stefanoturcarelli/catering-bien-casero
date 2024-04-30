@@ -6,18 +6,18 @@ Welcome to Catering Bien Casero - Your Go-to Food Catering Business Website! �
 
 This repository contains the code for the Catering Bien Casero website, a platform designed to promote and provide information about a food catering services business based in Buenos Aires, Argentina.
 
-## Usage 🌐
+## Demo 🌐
 
-You can access the live website hosted on GitHub Pages: [Catering Bien Casero](https://stefanoturcarelli.github.io/catering-bien-casero/)
+You can access the live website hosted on GitHub Pages: [Catering Bien Casero](https://cateringbiencasero.com)
 
 ## Considerations
 
 My goal is to create a professional, responsive design business website that showcases their services and helps them connect with potential customers. 🌮🍰
-Since the food catering industry is focused on presenting marvelous food confections I had to work with a professional photographer to make sure the images in this project had excellent quality.
+Since the food catering industry is focused on presenting marvelous food confections I had to work with a professional photographer to ensure the images in this project were quality.
 
 ## Challenges
 
-The biggest challenge while working on this project was finding the time with the client due to their crowded schedule. We had to work extra hours on weekends to keep up with the business fast pace environment.
+The biggest challenge while working on this project was finding the time with the client due to their crowded schedule. We had to work extra hours on weekends to keep up with the business's fast-paced environment.
 
 ## Acknowledgments 🙏
 
