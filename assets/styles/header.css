@@ -1,25 +1,30 @@
 header {
   background-color: #fff;
   height: 10svh;
-	display: grid;
-	place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 header i {
   color: #8f0310;
   font-size: 3rem;
-	padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 header img {
-	width: 5rem;
+  width: 5rem;
+  padding: 1rem 0;
+}
+
+.mobile-header {
+  display: none;
 }
 
 .header__flex-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .nav-menu {
@@ -34,7 +39,7 @@ header img {
 .nav-menu ul {
   list-style-type: none;
   padding: 0;
-	text-align: center;
+  text-align: center;
 }
 
 .nav-menu li {
@@ -45,4 +50,52 @@ header img {
 .nav-menu a {
   text-decoration: none;
   color: #8f0310;
+}
+
+/* Desktop Header */
+
+.desktop-header {
+  display: block;
+}
+
+.desktop-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.desktop-header__container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktop-header__container nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.desktop-header__container nav ul li {
+  padding: 0 1rem;
+}
+
+.desktop-header__container nav ul li a {
+  text-decoration: none;
+  color: #8f0310;
+}
+
+.desktop-header__container nav ul li a:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-header{
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+  }
 }
