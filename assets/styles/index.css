@@ -73,6 +73,12 @@
   }
 }
 
+/* ! Mobile navigation bar */
+
+.header-mobile-nav-bar {
+  display: none;
+}
+
 /* ! Section Hero Banner -----------------------------------------------------*/
 
 .hero-banner {
