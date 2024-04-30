@@ -417,14 +417,8 @@
 }
 
 @media (max-width: 768px) {
-  .gluten-free-veggie-business-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 425px) {
-  .gluten-free-veggie-business-container {
-    grid-template-columns: 1fr;
+  .gluten-free-veggie-business {
+    display: none;
   }
 }
 
@@ -733,8 +727,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 1rem 17rem 0;
   justify-items: center;
+  place-content: center; 
+  padding: 1rem 17rem 0;
 }
 
 @media (max-width: 768px) {
