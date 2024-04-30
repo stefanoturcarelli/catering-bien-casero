@@ -1,8 +1,17 @@
 "use strict";
 
-const questionsIcon = document.querySelectorAll(".questions-icon");
+// ! Mobile Navigation Bar
+
 const menuToggleBtn = document.querySelector(".mobile-nav-bar-toggle");
-const mobileNavBarLinks = document.querySelector(".mobile-nav-bar-menu__show");
+const mobileNavBarMenu = document.querySelector(".mobile-nav-bar-menu");
+
+menuToggleBtn.addEventListener("click", () => {
+    mobileNavBarMenu.classList.toggle("show");
+});
+
+// ! Frequently Asked Questions
+
+const questionsIcon = document.querySelectorAll(".questions-icon");
 
 questionsIcon.forEach((icon) => {
   icon.addEventListener("click", () => {
@@ -24,6 +33,4 @@ questionsIcon.forEach((icon) => {
   });
 });
 
-menuToggleBtn.addEventListener("click", () => {
-    mobileNavBarLinks.classList.toggle("mobile-nav-bar-menu__hide");
-});
+

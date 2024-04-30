@@ -14,6 +14,12 @@
   --bien-casero-green: #038f82;
 }
 
+/* ! General Styles ---------------------------------------------------------- */
+
+section > * {
+  padding: 5rem 0;
+}
+
 /* ! Whatsapp button -------------------------------------------------------- */
 .whatsapp-button {
   position: fixed;
@@ -36,7 +42,8 @@
 
 /* ! Header ----------------------------------------------------------------- */
 
-.header-logo-container {
+.header-logo-container,
+.header-logo-container__mobile {
   max-width: 7rem;
 }
 
@@ -77,6 +84,19 @@
 
 .header-mobile-nav-bar {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-nav-bar-menu {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: none;
+  }
+
+  .mobile-nav-bar-menu.show {
+    transform: translateY(0);
+    display: block;
+  }
 }
 
 /* ! Section Hero Banner -----------------------------------------------------*/
@@ -728,7 +748,7 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  place-content: center; 
+  place-content: center;
   padding: 1rem 17rem 0;
 }
 
