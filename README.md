@@ -6,7 +6,7 @@ Welcome to Catering Bien Casero - Your Go-to Food Catering Business Website! �
 
 This repository contains the code for the Catering Bien Casero website, a platform designed to promote and provide information about a food catering services business based in Buenos Aires, Argentina.
 
-## Usage 🌐
+## Demo 🌐
 
 You can access the live website hosted on GitHub Pages: [Catering Bien Casero](https://cateringbiencasero.com)
 
