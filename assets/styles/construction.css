@@ -1,0 +1,20 @@
+header {
+  height: 10svh;
+}
+
+.construction {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 80svh;
+}
+
+.construction h1 {
+	font-size: 3rem;
+	padding: 2rem 0;
+}
+
+footer {
+  height: 10svh;
+}

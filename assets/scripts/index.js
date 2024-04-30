@@ -2,12 +2,14 @@
 
 // ! Mobile Navigation Bar
 
-const menuToggleBtn = document.querySelector(".mobile-nav-bar-toggle");
-const mobileNavBarMenu = document.querySelector(".mobile-nav-bar-menu");
+const menuToggleBtn = document.querySelector(".menu-toggle-btn");
+const navMenu = document.querySelector(".nav-menu");
 
 menuToggleBtn.addEventListener("click", () => {
-    mobileNavBarMenu.classList.toggle("show");
+  const isMenuVisible = navMenu.style.display === 'block';
+  navMenu.style.display = isMenuVisible ? 'none' : 'block';
 });
+
 
 // ! Frequently Asked Questions
 
@@ -32,5 +34,3 @@ questionsIcon.forEach((icon) => {
     }
   });
 });
-
-
