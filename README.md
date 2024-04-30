@@ -13,11 +13,11 @@ You can access the live website hosted on GitHub Pages: [Catering Bien Casero](h
 ## Considerations
 
 My goal is to create a professional, responsive design business website that showcases their services and helps them connect with potential customers. 🌮🍰
-Since the food catering industry is focused on presenting marvelous food confections I had to work with a professional photographer to make sure the images in this project had excellent quality.
+Since the food catering industry is focused on presenting marvelous food confections I had to work with a professional photographer to ensure the images in this project were quality.
 
 ## Challenges
 
-The biggest challenge while working on this project was finding the time with the client due to their crowded schedule. We had to work extra hours on weekends to keep up with the business fast pace environment.
+The biggest challenge while working on this project was finding the time with the client due to their crowded schedule. We had to work extra hours on weekends to keep up with the business's fast-paced environment.
 
 ## Acknowledgments 🙏
 
