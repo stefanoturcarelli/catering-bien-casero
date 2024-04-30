@@ -346,6 +346,7 @@ section > * {
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .gluten-free-veggie-business-cards-container {
@@ -544,6 +545,7 @@ section > * {
 .frecuent-questions-title {
   text-align: center;
   color: var(--bien-casero-deep-red);
+  padding-bottom: 2rem;
 }
 
 .frecuent-questions-boxes-container {
