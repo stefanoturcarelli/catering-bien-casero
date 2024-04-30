@@ -19,14 +19,51 @@
 .contact-info-title {
     text-align: center;
     font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
 }
 
 .contact-info-subtitle {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+.contact-methods-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding-top: 6rem;
+}
+
+.contact-method-card {
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info-method {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+
+.contact-info-method-title {
+    color: var(--bien-casero-deep-red);
     font-weight: 600;
 }
 
+.icon-contact-info {
+    font-size: 5rem;
+    color: var(--bien-casero-deep-red);
+    display: flex;
+    align-items: center;
+
+
+}
 
 /* ! Section Meet Our Chef */
 
