@@ -13,10 +13,48 @@ header {
 }
 
 .construction h1 {
-	font-size: 3rem;
-	padding: 2rem 0;
+  font-size: 3rem;
+  padding: 2rem 0;
 }
 
 footer {
   height: 10svh;
+}
+
+/* Testing section */
+
+.test-section {
+  background-color: gray;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  place-items: center;
+  height: 50rem;
+}
+
+.test-white-card {
+  background-color: #fff;
+  height: 20rem;
+  width: 30rem;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.test-white-card::after {
+  content: "";
+  background-color: #000;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -30%;
+  background-image: url(../img/no-tacc.png);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

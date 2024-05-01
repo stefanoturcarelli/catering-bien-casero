@@ -17,8 +17,8 @@
 
 /* ! General Styles ---------------------------------------------------------- */
 
-section > * {
-  padding: 5rem 0;
+section {
+  padding-top: 10rem;
 }
 
 /* ! Whatsapp button -------------------------------------------------------- */
@@ -79,7 +79,7 @@ section > * {
   background-color: var(--bien-casero-deep-red);
   padding: 1rem 2rem;
   border-radius: 8rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
   width: fit-content;
 }
 
@@ -93,7 +93,7 @@ section > * {
   }
 
   .hero-banner-logo {
-    width: 400px;
+    max-width: 30rem;
   }
 }
 
@@ -149,8 +149,10 @@ section > * {
 }
 
 .our-offers-container-2 img {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border-radius: 50%;
+  width: 7rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-left: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -191,7 +193,7 @@ section > * {
 
   .our-offers-container-2 img {
     width: 70px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 50%;
   }
 }
@@ -234,7 +236,7 @@ section > * {
 
   .our-offers-container-2 img {
     width: 70px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
     border-radius: 50%;
   }
 }
@@ -261,7 +263,7 @@ section > * {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -331,6 +333,14 @@ section > * {
   }
 }
 
+@media (max-width: 768px) {
+  .three-cards-container,
+  .gluten-free-veggie-business-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* ! Section Gluten Free Vegetarian and Business */
 
 .gluten-free-veggie-business-image {
@@ -338,7 +348,7 @@ section > * {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 25rem 0;
+  padding: 17rem 0;
 }
 
 .gluten-free-veggie-business-container-title {
@@ -346,19 +356,16 @@ section > * {
   font-weight: 600;
   font-size: 2rem;
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
+  text-align: left;
 }
 
 .gluten-free-veggie-business-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-}
-
-.gluten-free-veggie-business-round-images {
-  border-radius: 50%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  width: 15rem;
+  justify-items: center;
+  padding-top: 10rem;
 }
 
 .gluten-free-card,
@@ -366,12 +373,23 @@ section > * {
 .business-box-card {
   background-color: #fff;
   color: #000;
-  padding: 1.5rem 2.5rem;
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
+  place-items: center;
   gap: 1rem;
   border-radius: 0.5rem;
+  position: relative;
+  padding: 2rem;
+  padding-top: 7rem;
+}
+
+.gluten-free-veggie-business-round-images {
+  border-radius: 50%;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: -10rem;
 }
 
 .gluten-free-veggie-business-cardtitle {
@@ -390,6 +408,7 @@ section > * {
 .about-us-container {
   display: grid;
   grid-template-columns: 6fr 4fr;
+  gap: 2rem;
 }
 
 .about-us-text-content {
@@ -439,6 +458,7 @@ section > * {
 
 .customer-reviews-corner-image-container img {
   max-width: 35rem;
+  padding-bottom: 1rem;
 }
 
 .customer-reviews-container-cards {
@@ -454,7 +474,7 @@ section > * {
   gap: 2rem;
   background-color: #fff;
   border-radius: 1rem;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .review-card img {
@@ -562,7 +582,7 @@ section > * {
   border-radius: 2mm;
   background-color: #fff;
   border-radius: 1rem;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .question-card-title {
@@ -615,7 +635,7 @@ section > * {
 .contact-us-container {
   background-image: url(../img/call-to-action-background.png);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -717,4 +737,14 @@ footer {
 
 .footer-container-text {
   font-size: 1.5rem;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

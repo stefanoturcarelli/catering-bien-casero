@@ -118,5 +118,4 @@ a {
   width: min(100% - 25px, 1080px);
   margin-inline: auto;
   box-sizing: border-box;
-  overflow: hidden;
 }
