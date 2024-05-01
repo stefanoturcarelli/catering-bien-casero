@@ -83,7 +83,7 @@ section {
   width: fit-content;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .hero-banner {
     background-position: right;
     padding-top: 100px;
@@ -97,7 +97,7 @@ section {
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .hero-banner {
     background-position: right;
     padding-top: 100px;
@@ -155,12 +155,13 @@ section {
   margin-left: 0.5rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .our-offers-container {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 2.5rem;
+    text-align: center;
   }
 
   .our-offers-image-container {
@@ -198,12 +199,13 @@ section {
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .our-offers-container {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 2.5rem;
+    text-align: center;
   }
 
   .our-offers-image-container {
@@ -327,19 +329,18 @@ section {
   color: var(--bien-casero-deep-red);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .three-cards-container {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .three-cards-container,
   .gluten-free-veggie-business-cards-container {
     grid-template-columns: 1fr;
   }
 }
-
 
 /* ! Section Gluten Free Vegetarian and Business */
 
@@ -397,7 +398,7 @@ section {
   font-size: 2rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .gluten-free-veggie-business {
     display: none;
   }
@@ -423,27 +424,40 @@ section {
   color: var(--bien-casero-deep-red);
 }
 
-.about-us-image img {
+.about-us-image-desktop img {
   border-radius: 50%;
 }
 
-@media (max-width: 768px) {
-  .about-us-container {
-    grid-template-columns: 1fr;
-  }
-
-  .about-us-text-content {
-    justify-items: center;
-  }
+.about-us-image-mobile {
+  display: none;
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .about-us-container {
     grid-template-columns: 1fr;
+    text-align: center;
+    place-items: center;
   }
 
   .about-us-text-content {
+    place-items: center;
     justify-items: center;
+    gap: 3rem;
+  }
+
+  .about-us-image-desktop {
+    width: 80%;
+    padding-top: 2rem;
+    display: none;
+  }
+
+  .about-us-image-mobile {
+    display: block;
+    width: 70%;
+  }
+
+  .about-us-image-mobile img {
+    border-radius: 50%;
   }
 }
 
@@ -505,13 +519,13 @@ section {
   font-weight: 600;
 }
 
-@media (width < 1200px) {
+@media screen and (width < 1200px) {
   .customer-reviews-container {
     gap: 3rem;
   }
 }
 
-@media (width < 900px) {
+@media screen and (width < 900px) {
   .customer-reviews-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -521,7 +535,7 @@ section {
   }
 }
 
-@media (width < 750px) {
+@media screen and (width < 750px) {
   .customer-reviews-container-cards {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -551,6 +565,25 @@ section {
 
 .referral-program-text {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .referral-program-container {
+    background-size: 105%;
+    background-image: none;
+    height: 80svh;
+    background-color: #fefdf1;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .referral-program-elements {
+    text-align: center;
+    padding: 0;
+    padding-bottom: 5rem;
+  }
 }
 
 /* ! Section Frecuent questions */
@@ -619,13 +652,13 @@ section {
   gap: 2.5rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .frecuent-questions-boxes-container {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .frecuent-questions-boxes-container {
     grid-template-columns: 1fr;
   }
@@ -716,13 +749,12 @@ section {
   padding: 1rem 17rem 0;
 }
 
-@media (max-width: 768px) {
-  .contact-info-boxes-container {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 768px) {
+  .contact-us-container {
+    background-image: none;
+    background-color: #fefdf1;
   }
-}
 
-@media (max-width: 425px) {
   .contact-info-boxes-container {
     grid-template-columns: 1fr;
   }
