@@ -15,19 +15,34 @@
   width: fit-content;
 }
 
+.catering-fingerfood-button {
+  background-color: #fff;
+  color: var(--bien-casero-deep-red);
+  margin-bottom: 5rem;
+}
+
 /* ! Section Hero Banner Services */
 
 .services-hero-banner {
   background-image: url(../img/Pernil-servicios-herobanner.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 80svh;
+  background-size: 120%;
+  background-position-x: center;
+  background-position-y: top;
   display: grid;
-  margin-bottom: 0;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.services-hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #fff, transparent 10%);
 }
 
 .services-hero-banner-container {
+  padding-top: 30rem;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -37,7 +52,7 @@
   color: var(--bien-casero-deep-red);
   font-size: 6rem;
   font-weight: 600;
-  padding: 30rem 0 1.5rem 0;
+  padding-bottom: 2rem;
 }
 
 .services-hero-banner-subtitle {
@@ -49,31 +64,10 @@
   font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-  .services-hero-banner {
-    background-position: right;
-    padding-top: 100px;
-    align-items: start;
-    border-bottom-left-radius: 0%;
-    border-bottom-right-radius: 0%;
-  }
-}
-
-@media (max-width: 425px) {
-  .services-hero-banner {
-    background-position: right;
-    padding-top: 100px;
-    align-items: start;
-    border-bottom-left-radius: 0%;
-    border-bottom-right-radius: 0%;
-  }
-}
-
 /* ! Section three options pernil */
 
 .three-options-pernil {
-  padding: 0 10rem;
-  margin-top: 0;
+  padding-top: 0rem;
 }
 
 .three-options-pernil-container {
@@ -131,38 +125,34 @@
   padding-top: 10rem;
 }
 
-@media (max-width: 768px) {
-  .three-options-pernil-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 425px) {
-  .three-options-pernil-container {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* ! Section Catering Fingerfood */
 
 .catering-fingerfood-background-image-container {
-  background-image: url(../img/Background-catering-fingerfood.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #8f0310;
+  --mask: radial-gradient(22.36rem at 50% 30rem, #000 99%, #0000 101%)
+      calc(50% - 20rem) 0/40rem 100%,
+    radial-gradient(22.36rem at 50% -20rem, #0000 99%, #000 101%) 50% 10rem/40rem
+      100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 10rem),
+    50% 100%,
+    0 calc(100% - 10rem)
+  );
 }
 
 .catering-fingerfood-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 23rem;
-  /* gap: 1.5rem; */
+  padding-bottom: 5rem;
 }
 
 .catering-fingerfood-card {
   padding: 3.5rem;
   background-color: #fff;
-  /* border-radius: 1rem; */
 }
 
 .catering-fingerfood-card ul li {
@@ -198,6 +188,9 @@
 
 .catering-fingerfood-lists {
   list-style: none;
+}
+
+.catering-fingerfood-lists li {
 }
 
 .catering-fingerfood-button-container {
@@ -287,8 +280,13 @@ li {
   padding: 1rem 0;
 }
 
-.fa-circle-check {
+.fa-circle-check,
+.fa-circle {
   color: var(--bien-casero-deep-red);
+}
+
+.fa-circle {
+  font-size: 0.7rem;
 }
 
 .section-sin-tacc-title {
@@ -307,45 +305,32 @@ li {
 }
 
 .sin-tacc-logo {
-  width: 10%;
-  height: 10%;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
-}
-
-@media (max-width: 768px) {
-  .menu-sin-tacc-container {
-    grid-template-columns: 1fr;
-  }
-
-  .menu-sin-tacc-text-content {
-    justify-items: center;
-  }
-}
-
-@media (max-width: 425px) {
-  .menu-sin-tacc-container {
-    grid-template-columns: 1fr;
-  }
-
-  .menu-sin-tacc-text-content {
-    justify-items: center;
-  }
+  display: inline;
 }
 
 /* ! Section Cajas Empresariales */
 
 .cajas-empresariales-background-image-container {
-  background-image: url(../img/Background-cajas-empresariales.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100svh;
+  background-color: #fafafa;
+  --mask: radial-gradient(6.57rem at 50% 8.85rem, #000 99%, #0000 101%)
+      calc(50% - 6rem) 0/12rem 51% repeat-x,
+    radial-gradient(6.57rem at 50% -5.85rem, #0000 99%, #000 101%) 50% 3rem/12rem
+      calc(51% - 3rem) repeat-x,
+    radial-gradient(6.57rem at 50% calc(100% - 8.85rem), #000 99%, #0000 101%)
+      calc(50% - 6rem) 100%/12rem 51% repeat-x,
+    radial-gradient(6.57rem at 50% calc(100% + 5.85rem), #0000 99%, #000 101%)
+      50% calc(100% - 3rem) / 12rem calc(51% - 3rem) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
 
 .cajas-empresariales-container {
   display: grid;
   grid-template-columns: 2fr 4fr;
-  padding-top: 12rem;
+  padding: 10rem 0;
 }
 
 .cajas-empresariales-text-content {
@@ -370,22 +355,114 @@ li {
   border-radius: 50%;
 }
 
-@media (max-width: 768px) {
-  .cajas-empresariales-container {
-    grid-template-columns: 1fr;
-  }
-
-  .cajas-empresariales-text-content {
-    justify-items: center;
-  }
+.catering-fingerfood {
+  padding-top: 5rem;
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 768px) {
+  .mobile-header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 8rem;
+  }
+
+  .services-hero-banner {
+    text-align: center;
+    color: #000;
+    background: linear-gradient(to top, #fff, #fff 20%, transparent 40%),
+      url(../img/pernil-con-cuchillo.jpg) no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    background-size: 120%;
+  }
+
+  .services-hero-banner-container {
+    padding-top: 30rem;
+    padding-bottom: 5rem;
+  }
+
+  .menu-sin-tacc-container {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-sin-tacc-text-content {
+    justify-items: center;
+  }
+
   .cajas-empresariales-container {
     grid-template-columns: 1fr;
   }
 
   .cajas-empresariales-text-content {
     justify-items: center;
+  }
+
+  .three-options-pernil-container {
+    grid-template-columns: 1fr;
+  }
+
+  .catering-fingerfood-container {
+    grid-template-columns: 1fr;
+  }
+
+  .catering-fingerfood-button {
+    margin-bottom: 10rem;
+  }
+
+  .menu-sin-tacc {
+    text-align: center;
+  }
+
+  .menu-sin-tacc p {
+    text-align: justify;
+    padding: 1rem 0;
+  }
+
+  .menu-sin-tacc ul {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .menu-sin-tacc-button {
+    margin: 5rem 0;
+  }
+
+  .section-sin-tacc-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .menu-sin-tacc-image {
+    display: none;
+  }
+
+  .cajas-empresariales {
+    padding-top: 2rem;
+  }
+
+  .cajas-empresariales-image {
+    padding-bottom: 2rem;
+  }
+
+  .cajas-empresariales-text-content {
+    padding-left: 0;
+  }
+
+  .cajas-empresariales-title {
+    text-align: center;
+  }
+
+  .cajas-empresariales p {
+    text-align: justify;
+    padding-bottom: 1rem;
+  }
+
+  .cajas-empresariales ul {
+    padding-left: 0;
+  }
+
+  .frecuent-questions {
+    padding-top: 5rem;
   }
 }
