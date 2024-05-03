@@ -99,3 +99,21 @@ header img {
     display: block;
   }
 }
+
+#services-header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+#services-header a {
+  color: #fff;
+  font-weight: 600;
+}
+
+#services-header a:hover {
+  color: #f7c6cc;
+}
