@@ -190,9 +190,6 @@
   list-style: none;
 }
 
-.catering-fingerfood-lists li {
-}
-
 .catering-fingerfood-button-container {
   display: flex;
   justify-content: center;
@@ -294,6 +291,10 @@ li {
   font-size: 3rem;
 }
 
+.menu-sin-tacc-image-mobile {
+  display: none;
+}
+
 .menu-sin-tacc-image {
   display: grid;
   grid-template-columns: 1fr;
@@ -359,12 +360,54 @@ li {
   padding-top: 5rem;
 }
 
+.cajas-empresariales-image-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
+  .services-hero-banner {
+    padding-bottom: 0;
+  }
+
+  .services-hero-banner-title {
+    font-size: 5.5rem;
+    padding-bottom: 0;
+  }
+
+  .services-hero-banner-subtitle {
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+  }
+
+  .services-hero-banner-text {
+    font-size: 1.8rem;
+  }
+
   .mobile-header {
     position: fixed;
     z-index: 100;
     width: 100%;
     height: 8rem;
+    background-color: transparent;
+  }
+
+  .menu-sin-tacc-image-mobile,
+  .cajas-empresariales-image-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .menu-sin-tacc-image-mobile img,
+  .cajas-empresariales-image-mobile img {
+    border-radius: 50%;
+    width: 80%;
+  }
+
+  .cajas-empresariales-image {
+    display: none;
   }
 
   .services-hero-banner {
@@ -374,7 +417,7 @@ li {
       url(../img/pernil-con-cuchillo.jpg) no-repeat;
     background-position-y: center;
     background-position-x: center;
-    background-size: 120%;
+    background-size: cover;
   }
 
   .services-hero-banner-container {
@@ -387,7 +430,7 @@ li {
   }
 
   .menu-sin-tacc-text-content {
-    justify-items: center;
+    grid-area: footer;
   }
 
   .cajas-empresariales-container {
@@ -399,7 +442,17 @@ li {
   }
 
   .three-options-pernil-container {
+    display: grid;
     grid-template-columns: 1fr;
+    place-items: center;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .prices-pernil-2nd-card {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
   }
 
   .catering-fingerfood-container {
@@ -431,10 +484,6 @@ li {
   .section-sin-tacc-title {
     text-align: center;
     margin-bottom: 2rem;
-  }
-
-  .menu-sin-tacc-image {
-    display: none;
   }
 
   .cajas-empresariales {
