@@ -1,113 +1,164 @@
 :root {
-    /* Bien Casero Pallete */
-    --bien-casero-deep-red: #8f0310;
-    --bien-casero-green: #038f82;
+  /* Bien Casero Pallete */
+  --bien-casero-deep-red: #8f0310;
+  --bien-casero-green: #038f82;
 }
 
 /* ! Section Contact Info */
 
 .contact-info {
-    background-image: url(../img/background-contact-us.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100svh;
-    display: grid;
+  background-image: url(../img/background-contact-us.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100svh;
+  display: grid;
 }
 
-
 .contact-info-title {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 700;
-    padding-bottom: 1rem;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
 }
 
 .contact-info-subtitle {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
 }
 
+.contact-info-subtitle-2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-bottom: 3rem;
+}
 
 .contact-methods-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    padding-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding-top: 6rem;
 }
 
 .contact-method-card {
-    padding: 2rem;
-    gap: 2rem;
-    background-color: #fff;
-    border-radius: 1rem;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  display: grid;
+  place-items: center;
+  width: 30rem;
+  height: 18rem;
+}
+
+.contact-method-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 .contact-info-method {
-    display: grid;
-    place-items: center;
-    gap: 1rem;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
 }
 
 .contact-info-method-title {
-    color: var(--bien-casero-deep-red);
-    font-weight: 600;
+  color: var(--bien-casero-deep-red);
+  font-weight: 600;
 }
 
 .icon-contact-info {
-    font-size: 5rem;
-    color: var(--bien-casero-deep-red);
-    display: flex;
-    align-items: center;
-
-
+  font-size: 5rem;
+  color: var(--bien-casero-deep-red);
+  display: flex;
+  align-items: center;
 }
 
 /* ! Section Meet Our Chef */
 
 .meet-our-chef {
-    background-image: url(../img/Background-footer-contact-us.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin-top: 5rem;
+  background-color: var(--bien-casero-deep-red);
+  color: #fff;
+  --bottom: linear-gradient(#000 0 0) bottom/100% calc(100% - 42rem) no-repeat,
+    radial-gradient(farthest-side, #000 99.9%, #0000) top/700rem 700rem
+      no-repeat;
+  -webkit-mask: var(--bottom);
+  mask: var(--bottom);
+  padding-top: 10rem;
 }
 
 .meet-our-chef-container {
-    display: grid;
-    grid-template-columns: 4fr 2fr;
-    padding: 12rem 0 5rem;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding-bottom: 6rem;
+  align-items: center;
 }
 
 .meet-our-chef-text {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.meet-our-chef-text .section-title {
+  padding-bottom: 2rem;
 }
 
 .meet-our-chef-subtitle {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.contact-us-our-chef-image {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
 }
 
 .contact-us-our-chef-image img {
-    height: 22rem;
-    border-radius: 50%;
+  border-radius: 50%;
 }
-
-
 
 /* ! Footer */
 .contact-us-footer {
-    background-color: #494949;
-    color: #fff;
-    padding: 3rem 0;
+  background-color: #494949;
+  color: #fff;
+}
+
+.frecuent-questions {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    padding-top: 0;
+    height: 160svh;
+  }
+
+  .contact-info-container {
+    padding-top: 5rem;
+  }
+
+  .contact-methods-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .meet-our-chef-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .meet-our-chef-text {
+    text-align: center;
+  }
+
+  .contact-us-our-chef-image {
+    display: grid;
+    place-items: center;
+  }
+
+  .contact-us-our-chef-image img {
+    width: 80%;
+  }
 }
