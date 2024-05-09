@@ -125,23 +125,24 @@
   padding-top: 10rem;
 }
 
+.pernil-price {
+  color: var(--bien-casero-deep-red);
+  font-size: 2.5rem;
+}
+
 /* ! Section Catering Fingerfood */
 
 .catering-fingerfood-background-image-container {
   background-color: #8f0310;
-  --mask: radial-gradient(22.36rem at 50% 30rem, #000 99%, #0000 101%)
-      calc(50% - 20rem) 0/40rem 100%,
-    radial-gradient(22.36rem at 50% -20rem, #0000 99%, #000 101%) 50% 10rem/40rem
-      100% repeat-x;
+  --mask: radial-gradient(22.36rem at 50% 30rem, #000 99%, #0000 101%) calc(50% - 20rem) 0/40rem 100%,
+    radial-gradient(22.36rem at 50% -20rem, #0000 99%, #000 101%) 50% 10rem/40rem 100% repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - 10rem),
-    50% 100%,
-    0 calc(100% - 10rem)
-  );
+  clip-path: polygon(0 0,
+      100% 0,
+      100% calc(100% - 10rem),
+      50% 100%,
+      0 calc(100% - 10rem));
 }
 
 .catering-fingerfood-container {
@@ -200,7 +201,7 @@
   position: relative;
 }
 
-.carousel > ul {
+.carousel>ul {
   list-style: none;
 }
 
@@ -212,7 +213,7 @@
   transition-delay: 200ms;
 }
 
-.slide > img {
+.slide>img {
   border-radius: 0.5rem;
   display: block;
   width: 100%;
@@ -316,14 +317,10 @@ li {
 
 .cajas-empresariales-background-image-container {
   background-color: #fafafa;
-  --mask: radial-gradient(6.57rem at 50% 8.85rem, #000 99%, #0000 101%)
-      calc(50% - 6rem) 0/12rem 51% repeat-x,
-    radial-gradient(6.57rem at 50% -5.85rem, #0000 99%, #000 101%) 50% 3rem/12rem
-      calc(51% - 3rem) repeat-x,
-    radial-gradient(6.57rem at 50% calc(100% - 8.85rem), #000 99%, #0000 101%)
-      calc(50% - 6rem) 100%/12rem 51% repeat-x,
-    radial-gradient(6.57rem at 50% calc(100% + 5.85rem), #0000 99%, #000 101%)
-      50% calc(100% - 3rem) / 12rem calc(51% - 3rem) repeat-x;
+  --mask: radial-gradient(6.57rem at 50% 8.85rem, #000 99%, #0000 101%) calc(50% - 6rem) 0/12rem 51% repeat-x,
+    radial-gradient(6.57rem at 50% -5.85rem, #0000 99%, #000 101%) 50% 3rem/12rem calc(51% - 3rem) repeat-x,
+    radial-gradient(6.57rem at 50% calc(100% - 8.85rem), #000 99%, #0000 101%) calc(50% - 6rem) 100%/12rem 51% repeat-x,
+    radial-gradient(6.57rem at 50% calc(100% + 5.85rem), #0000 99%, #000 101%) 50% calc(100% - 3rem) / 12rem calc(51% - 3rem) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
