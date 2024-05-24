@@ -45,11 +45,15 @@ In the future, I plan to implement a shopping experience where customers can ord
 
 ## Screenshots
 
+### Home
 ![image](https://github.com/stefanoturcarelli/catering-bien-casero/assets/67341828/769358c2-0f5a-4747-8970-6f8c8ea84907)
 
+### About
 ![image](https://github.com/stefanoturcarelli/catering-bien-casero/assets/67341828/43abdb23-6c17-478e-9b7c-77714467bf6a)
 
+### Services
 ![image](https://github.com/stefanoturcarelli/catering-bien-casero/assets/67341828/67184fc2-d4ce-4f50-8dc5-56ef31327a6e)
 
+### Contact
 ![image](https://github.com/stefanoturcarelli/catering-bien-casero/assets/67341828/93ce3c2a-5f81-4aaf-aa4d-8ceb4cc90eac)
 
