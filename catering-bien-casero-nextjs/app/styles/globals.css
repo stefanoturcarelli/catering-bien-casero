@@ -1,0 +1,12 @@
+:root {
+  /* Bien Casero Pallete */
+  --bien-casero-deep-red: #8f0310;
+  --bien-casero-green: #038f82;
+}
+
+.container {
+  max-width: 1200px;
+  width: min(100% - 25px, 1080px);
+  margin-inline: auto;
+  box-sizing: border-box;
+}
