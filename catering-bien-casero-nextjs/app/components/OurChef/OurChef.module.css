@@ -1,0 +1,53 @@
+.ourChefContainer {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+}
+
+.ourChefTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-right: 8rem;
+}
+
+.sectionOurChefTitle {
+  font-size: 3.5rem;
+}
+
+.sectionOurChefSubtitle {
+  color: var(--bien-casero-deep-red);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.ourChefImageDesktop {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  border-radius: 50%;
+}
+
+.ourChefImageMobile {
+  display: none;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .ourChefContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .ourChefTextContent {
+    justify-items: center;
+  }
+
+  .ourChefImageDesktop {
+    display: none;
+  }
+
+  .ourChefImageMobile {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
