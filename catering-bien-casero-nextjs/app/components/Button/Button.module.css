@@ -1,0 +1,18 @@
+.primary {
+  color: #fff;
+  background-color: var(--bien-casero-deep-red);
+  padding: 1rem 2rem;
+  border-radius: 8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: fit-content;
+}
+
+.secondary {
+  color: var(--bien-casero-deep-red);
+  font-weight: 600;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: fit-content;
+}

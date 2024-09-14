@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./NosotrosPage.module.css";
 import Link from "next/link";
-import { WhiteButton } from "../components/whiteButton/WhiteButton";
+import { Button } from "@/app/components/Button/Button";
 
 export default function NosotrosPage() {
   return (
@@ -14,9 +14,7 @@ export default function NosotrosPage() {
               Acerca de nosotros
             </h1>
             <p className={styles.aboutUsHeroBannerSubtitle}>Lo que hacemos</p>
-            <button className={styles.aboutUsHeroBannerButton}>
-              <Link href="/contact">¿Hablamos?</Link>
-            </button>
+            <Button href="/contact" title="¿Hablamos?" style="primary" />
           </div>
         </div>
       </section>
@@ -71,7 +69,7 @@ export default function NosotrosPage() {
                 lo importante que es, por eso cuidamos cada detalle.
               </p>
               <div>
-                <WhiteButton href="/contact" title="Contactanos" />
+                <Button href="/contact" title="Contactanos" style="secondary" />
               </div>
             </div>
           </div>
