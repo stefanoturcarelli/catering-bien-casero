@@ -99,23 +99,3 @@
   padding: 1rem 0;
 }
 
-.ourVisionContainer {
-  background-image: url(/img/our-vision-background.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.ourVisionElements {
-  text-align: center;
-  padding: 15rem;
-  color: #fff;
-}
-
-.ourVisionElements > * {
-  padding: 2rem 0;
-}
-
-.ourVisionTitle {
-  padding-top: 12rem;
-}
