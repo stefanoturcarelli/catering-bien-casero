@@ -1,8 +1,7 @@
 import Image from "next/image";
-
 import styles from "./NosotrosPage.module.css";
-import Link from "next/link";
 import { Button } from "@/app/components/Button/Button";
+import { Video } from "../components/Video/Video";
 
 export default function NosotrosPage() {
   return (
@@ -90,26 +89,11 @@ export default function NosotrosPage() {
               ¿Todavía no te tentaste? ¡Mirá estos videos!
             </h2>
             <div className={styles.videosContainer}>
-              <video
-                width="100%"
-                height="380px"
+              <Video
+                src="/video/bruschettas-video.mp4"
                 poster="/img/ham-cheese-toast.jpg"
-                controls
-                preload="auto"
-              >
-                <source src="/video/bruschettas-video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <video
-                width="100%"
-                height="380px"
-                poster="/img/Pernil4.png"
-                controls
-                preload="auto"
-              >
-                <source src="/video/pernil-video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              />
+              <Video src="/video/pernil-video.mp4" poster="/img/Pernil4.png" />
             </div>
           </div>
         </div>
