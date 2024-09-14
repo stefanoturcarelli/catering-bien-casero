@@ -76,22 +76,36 @@ export default function NosotrosPage() {
           <li>Facebook</li>
         </ul>
       </section>
-      <section>
-        <h2>¿Todavía no te tentaste? ¡Mirá estos videos!</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/6JYIGclVQdw"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        ></iframe>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/6JYIGclVQdw"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        ></iframe>
+      <section className={styles.videos}>
+        <div className={styles.videosBackgroundImageContainer}>
+          <div className="container">
+            <h2 className={styles.videosTitle}>
+              ¿Todavía no te tentaste? ¡Mirá estos videos!
+            </h2>
+            <div className={styles.videosContainer}>
+              <video
+                width="100%"
+                height="380px"
+                poster="/img/ham-cheese-toast.jpg"
+                controls
+                preload="auto"
+              >
+                <source src="/video/bruschettas-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <video
+                width="100%"
+                height="380px"
+                poster="/img/Pernil4.png"
+                controls
+                preload="auto"
+              >
+                <source src="/video/pernil-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
       </section>
       <section>
         <h2> Preguntas frecuentes</h2>
