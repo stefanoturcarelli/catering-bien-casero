@@ -1,7 +1,9 @@
-import Image from "next/image";
 import styles from "./NosotrosPage.module.css";
 import { Button } from "@/app/components/Button/Button";
 import { Video } from "../components/Video/Video";
+import { OurChef } from "../components/OurChef/OurChef";
+import { Noe } from "../components/Noe/Noe";
+import { OurVision } from "../components/OurVision/OurVision";
 
 export default function NosotrosPage() {
   return (
@@ -17,63 +19,9 @@ export default function NosotrosPage() {
           </div>
         </div>
       </section>
-      <section>
-        <h2>Nuestro chef</h2>
-        <p>Te presentamos a Joni</p>
-        <Image
-          src={"/img/joni.png"}
-          alt="Jonatan Moreira"
-          width={100}
-          height={100}
-        />
-        <p>
-          Todo comenzó como un hobbie, cocinando para mi familia y amigos. Hice
-          varios cursos y también me formé como Chef.
-        </p>
-        <p>
-          Desde 2018, Catering Bien Casero es mi forma de demostrarle a todos lo
-          mucho que amo cocinar y llevar a sus casas comida rica, abundante,
-          casera y de calidad.
-        </p>
-      </section>
-      <section>
-        <h2>Noe</h2>
-        <p>La mano derecha del chef</p>
-        <Image
-          src={"/img/noe.jpg"}
-          alt="Noelia Echeverria"
-          width={100}
-          height={100}
-        />
-        <p>
-          ¡Hola! Mi nombre es Noelia, y estoy orgullosa de decir que soy la que
-          impulsó a Joni a comenzar este emprendimiento.
-        </p>
-        <p>
-          Actualmente llevo adelante las redes sociales y la coordinación con
-          los clientes, así que si te contactas con nosotros seguramente sea yo
-          la que esté del otro lado, ¡mucho gusto!
-        </p>
-      </section>
-      <section className={styles.ourVision}>
-        <div className="container">
-          <div className={styles.ourVisionContainer}>
-            <div className={styles.ourVisionElements}>
-              <h2 className={styles.ourVisionTitle}>Nuestra visión</h2>
-              <p className={styles.ouVvisionText}>
-                Bien Casero es sinónimo de calidad. Disfrutamos mucho de la
-                comida, y sabemos lo que representa poder llegar a tu mesa. Un
-                cumpleaños, un encuentro con amigos, un domingo en familia, una
-                reunión laboral. Un momento de disfrute con los tuyos. Sabemos
-                lo importante que es, por eso cuidamos cada detalle.
-              </p>
-              <div>
-                <Button href="/contact" title="Contactanos" style="secondary" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <OurChef />
+      <Noe />
+      <OurVision />
       <section>
         <h2> Nuestras redes sociales</h2>
         <p>¡Seguinos en nuestras redes!</p>
