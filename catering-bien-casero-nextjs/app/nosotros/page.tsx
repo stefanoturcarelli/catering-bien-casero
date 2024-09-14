@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import styles from "./NosotrosPage.module.css";
 import Link from "next/link";
+import { WhiteButton } from "../components/whiteButton/WhiteButton";
 
 export default function NosotrosPage() {
   return (
@@ -57,16 +58,24 @@ export default function NosotrosPage() {
           la que esté del otro lado, ¡mucho gusto!
         </p>
       </section>
-      <section>
-        <h2>Nuestra visión</h2>
-        <p>
-          Bien Casero es sinónimo de calidad. Disfrutamos mucho de la comida, y
-          sabemos lo que representa poder llegar a tu mesa. Un cumpleaños, un
-          encuentro con amigos, un domingo en familia, una reunión laboral. Un
-          momento de disfrute con los tuyos. Sabemos lo importante que es, por
-          eso cuidamos cada detalle.
-        </p>
-        <button>CONTACTANOS</button>
+      <section className={styles.ourVision}>
+        <div className="container">
+          <div className={styles.ourVisionContainer}>
+            <div className={styles.ourVisionElements}>
+              <h2 className={styles.ourVisionTitle}>Nuestra visión</h2>
+              <p className={styles.ouVvisionText}>
+                Bien Casero es sinónimo de calidad. Disfrutamos mucho de la
+                comida, y sabemos lo que representa poder llegar a tu mesa. Un
+                cumpleaños, un encuentro con amigos, un domingo en familia, una
+                reunión laboral. Un momento de disfrute con los tuyos. Sabemos
+                lo importante que es, por eso cuidamos cada detalle.
+              </p>
+              <div>
+                <WhiteButton href="/contact" title="Contactanos" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section>
         <h2> Nuestras redes sociales</h2>
