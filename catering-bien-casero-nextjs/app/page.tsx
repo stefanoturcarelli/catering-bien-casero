@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
 import { IndexBanner } from "./components/IndexBanner/IndexBanner";
+import Cart from "./Cart";
 
 export default function IndexPage() {
-  return <IndexBanner />;
+  return (
+    <>
+      <IndexBanner />
+      <div>Cart</div>
+      <Cart
+        params={{
+          user: "1",
+        }}
+      />
+    </>
+  );
 }
 
 export const metadata: Metadata = {
