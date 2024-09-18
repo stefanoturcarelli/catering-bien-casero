@@ -1,0 +1,37 @@
+.backgroundImage {
+  background-image: url("/img/Hero-banner-background-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80svh;
+  display: grid;
+  border-bottom-left-radius: 45% 20%;
+  border-bottom-right-radius: 45% 20%;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 3rem;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .backgroundImage {
+    background-position: right;
+    padding-top: 100px;
+    align-items: start;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+
+  .logo {
+    max-width: 30rem;
+    height: auto;
+  }
+}
