@@ -32,9 +32,9 @@ export const Nav = () => {
         </Link>
         <Link
           className={`${styles.link} ${
-            pathname === "/nosotros" ? styles.active : ""
+            pathname === "/about" ? styles.active : ""
           }`}
-          href="/nosotros"
+          href="/about"
         >
           Nosotros
         </Link>
