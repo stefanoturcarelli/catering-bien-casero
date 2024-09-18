@@ -1,7 +1,12 @@
+import { BackEndNav } from "../components/BackEndNav/BackEndNav";
+import styles from "./Dashboard.module.css";
+
 export default function DashboardPage() {
   return (
-    <div>
+    <section className={styles.background}>
       <h1>Dashboard</h1>
-    </div>
+      <p>Welcome to the dashboard</p>
+      <BackEndNav />
+    </section>
   );
 }
