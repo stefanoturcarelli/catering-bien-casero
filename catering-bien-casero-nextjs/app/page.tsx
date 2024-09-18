@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Counter } from "./components/counter/Counter";
 import { IndexBanner } from "./components/IndexBanner/IndexBanner";
 
 export default function IndexPage() {
@@ -8,4 +7,21 @@ export default function IndexPage() {
 
 export const metadata: Metadata = {
   title: "Catering Bien Casero",
+  description: "Catering para eventos en Buenos Aires",
+  authors: [
+    {
+      name: "Stefano Turcarelli",
+    },
+    {
+      name: "Ileana Echeverria",
+    },
+  ],
+  keywords: [
+    "catering",
+    "eventos",
+    "buenos aires",
+    "comida",
+    "fiestas",
+    "catering bien casero",
+  ],
 };
