@@ -6,7 +6,7 @@ import { OurVision } from "../components/OurVision/OurVision";
 import { FAQ } from "../components/FAQ/FAQ";
 import { SocialMediaBanner } from "../components/SocialMediaBanner/SocialMediaBanner";
 import { VideosBanner } from "../components/VideosBanner/VideosBanner";
-import { Banner } from "../components/contact/Banner";
+import { Banner } from "../components/Banner";
 
 export default function AboutPage() {
   return (
